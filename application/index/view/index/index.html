@@ -729,6 +729,7 @@
 	
 	
 		<!--主体七部分-->
+		{volist name="cover1" id="val1"}
 		<div id="main7">
 			<div class="main7-t clear">
 				<h3><span>迪葵纳</span>韩风时尚妈妈装</h3>
@@ -748,19 +749,19 @@
 					<dl>
 						<dt><a href="#" title="连衣裙专区"><img data-original="PUBLIC_IMG/main7-7.jpg" class="lazy"/></a></dt>
 						<dd>
-							<a href="#">T恤</a>
-							<a href="#">衬衫</a>
-							<a href="#">裤装</a>
-							<a href="#">裙装</a>
-							<a href="#">短外套</a>
-							<a href="#">毛针织衫</a>
-							<a href="#">套装</a>
-							<a href="#">风衣</a>
+							{volist name="cover2" id="val2"}
+							{if ($val1.cate_id = $val2.brand_id)}
+							<a href="#">{$val2.name}</a>
+							{/if}
+							{/volist}
+							
 						</dd>
 					</dl>
 				</div>
 				<div class="main7-b2">
-					<a href="#" title="dequanna"><img data-original="PUBLIC_IMG/main7-1.jpg" class="lazy"/></a>
+					{volist name="cover1" id="val1"}
+					<a href="#" title="dequanna"><img data-original="{$val1.cover_img}" class="lazy"/></a>
+					{/volist}
 				</div>
 				<div class="main7-b3">
 					<a href="#" title="新款T恤"><img data-original="PUBLIC_IMG/main7-8.jpg" class="lazy"/></a>
@@ -816,276 +817,8 @@
 				</dl>
 			</div>
 		</div>
+		{/volist}
 	
-	
-		<!--主体八部分-->
-		<div id="main8">
-			<div class="main8-t clear">
-				<h3><span>娜娜日记</span>韩风甜美少女装</h3>
-				<ul class="clear">
-					<li>衬衫</li>
-					<li>套装</li>
-					<li>裤装</li>
-					<li>裙装</li>
-					<li style="color:#e53333">T恤</li>
-					<li>更多></li>
-				</ul>
-			</div>
-			
-			<div class="main8-b clear">
-				<div class="main8-b1">
-					<dl>
-						<dt><a href="#" title="连衣裙专区"><img data-original="PUBLIC_IMG/main8-1.jpg" class="lazy"/></a></dt>
-						<dd>
-							<a href="#">裙装</a>
-							<a href="#">裤装</a>
-							<a href="#">短外套</a>
-							<a href="#">T恤</a>
-							<a href="#">卫衣/绒衫</a>
-						</dd>
-					</dl>
-				</div>
-				<div class="main8-b2">
-					<a href="#" title="dequanna"><img data-original="PUBLIC_IMG/main8-2.jpg" class="lazy"/></a>
-				</div>
-				<div class="main8-b3">
-					<a href="#" title="新款T恤" style="margin-top: 0;"><img data-original="PUBLIC_IMG/main8_05.jpg" class="lazy"/></a>
-					<a href="#" title="衬衫"><img data-original="PUBLIC_IMG/main8-3.jpg" class="lazy"/></a>	
-					<a href="#" title="美美裙装"><img data-original="PUBLIC_IMG/main8-4.jpg" class="lazy"/></a>	
-				</div>
-			</div>
-			
-			<div class="main8-img clear">
-				<dl>
-					<dt>
-						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main8-5.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥136.00<span>￥208.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main8-6.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥45.00<span>￥108.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main8-7.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥106.00<span>￥208.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main8-8.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥87.00<span>￥148.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl style="margin-right: 0;">
-					<dt>
-						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main8-9.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥236.00<span>￥328.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-			</div>
-		</div>
-	
-		<!--主体九部分-->
-		<div id="main9">
-			<div class="main9-t clear">
-				<h3><span>米妮·哈鲁</span>韩风时尚童装</h3>
-				<ul class="clear">
-					<li>婴幼童</li>
-					<li>套装</li>
-					<li>衬衫</li>
-					<li>裤装</li>
-					<li>裙装</li>
-					<li>卫衣/绒衫</li>
-					<li>T恤</li>
-					<li>更多></li>
-				</ul>
-			</div>
-			
-			<div class="main9-b clear">
-				<div class="main9-b1">
-					<dl>
-						<dt><a href="#" title="新品六折发售"><img data-original="PUBLIC_IMG/main9-1.jpg" class="lazy"/></a></dt>
-						<dd>
-							<a href="#">卫衣/绒衫</a>
-							<a href="#">牛仔裤</a>
-							<a href="#">套装</a>
-							<a href="#">T恤</a>
-							<a href="#">外套/夹克/大衣</a>
-							<a href="#">连衣裙</a>
-							<a href="#">毛衣/针织衫</a>
-							<a href="#">打底裤</a>
-							<a href="#">T恤</a>
-							<a href="#">半身裙</a>
-							<a href="#">休闲裤</a>
-							<a href="#">马甲</a>
-						</dd>
-					</dl>
-				</div>
-				<div class="main9-b2">
-					<a href="#" title="Minizaru童装"><img data-original="PUBLIC_IMG/main9-4.jpg" class="lazy"/></a>
-				</div>
-				<div class="main9-b3">					
-					<a href="#" title="精选童装" style="margin-top: 0;"><img data-original="PUBLIC_IMG/main9-3.jpg" class="lazy"/></a>	
-					<a href="#" title="热卖裤装"><img data-original="PUBLIC_IMG/main9-2.jpg" class="lazy"/></a>	
-				</div>
-			</div>
-			
-			<div class="main9-img clear">
-				<dl>
-					<dt>
-						<a href="#" title="米妮哈鲁童装2017秋女童韩版儿童裤子中大童牛仔背带裤ZR8206泷"><img data-original="PUBLIC_IMG/main9-5.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥102.00<span>￥148.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						<a href="#" title="米妮哈鲁童装2017秋女童韩版儿童裤子中大童牛仔背带裤ZR8206泷"><img data-original="PUBLIC_IMG/main9-6.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥221.00<span>￥256.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						<a href="#" title="米妮哈鲁童装2017秋女童韩版儿童裤子中大童牛仔背带裤ZR8206泷"><img data-original="PUBLIC_IMG/main9-7.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥143.00<span>￥342.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						<a href="#" title="米妮哈鲁童装2017秋女童韩版儿童裤子中大童牛仔背带裤ZR8206泷"><img data-original="PUBLIC_IMG/main9-8.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥146.00<span>￥238.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl style="margin-right: 0;">
-					<dt>
-						<a href="#" title="米妮哈鲁童装2017秋女童韩版儿童裤子中大童牛仔背带裤ZR8206泷"><img data-original="PUBLIC_IMG/main9-9.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥136.00<span>￥208.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-			</div>
-		</div>
-	
-		<!--主体十部分-->
-		<div id="main10">
-			<div class="main10-t clear">
-				<h3><span>尼班诗</span>欧美时尚女装</h3>
-				<ul class="clear">
-					<li>蕾丝雪纺</li>
-					<li>连衣裙</li>
-					<li>衬衫</li>
-					<li>裤装</li>
-					<li>连衣裙</li>
-					<li>T恤</li>
-					<li>更多></li>
-				</ul>
-			</div>
-			
-			<div class="main10-b clear">
-				<div class="main10-b1">
-					<dl>
-						<dt><a href="#" title="出游正当季 新品起航"><img data-original="PUBLIC_IMG/main10_03.jpg" class="lazy"/></a></dt>
-						<dd>
-							<a href="#">卫衣/绒衫</a>
-							<a href="#">毛针织衫</a>
-							<a href="#">连衣裙</a>
-							<a href="#">T恤</a>
-							<a href="#">衬衫</a>
-							<a href="#">蕾丝衫/雪纺衫</a>
-							<a href="#">休闲外套</a>
-							<a href="#">休闲裤</a>
-							<a href="#">马甲</a>
-						</dd>
-					</dl>
-				</div>
-				<div class="main10-b2">
-					<a href="#" title="niBBuns女装"><img data-original="PUBLIC_IMG/main10-1.jpg" class="lazy"/></a>
-				</div>
-				<div class="main10-b3">					
-					<a href="#" title="热卖裤装"><img data-original="PUBLIC_IMG/main10_05.jpg" class="lazy"/></a>	
-				</div>
-			</div>
-			
-			<div class="main10-img clear">
-				<dl>
-					<dt>
-						<a href="#" title="尼班诗欧美2017秋装新款女装ulzzang宽松绑带套头针织衫毛衣女萍"><img data-original="PUBLIC_IMG/main10-2.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥136.00<span>￥208.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						<a href="#" title="尼班诗欧美2017秋装新款女装ulzzang宽松绑带套头针织衫毛衣女萍"><img data-original="PUBLIC_IMG/main10-3.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥236.00<span>￥408.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						<a href="#" title="尼班诗欧美2017秋装新款女装ulzzang宽松绑带套头针织衫毛衣女萍"><img data-original="PUBLIC_IMG/main10-4.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥89.00<span>￥138.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
-						<a href="#" title="尼班诗欧美2017秋装新款女装ulzzang宽松绑带套头针织衫毛衣女萍"><img data-original="PUBLIC_IMG/main10-5.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥124.00<span>￥298.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-				<dl style="margin-right: 0;">
-					<dt>
-						<a href="#" title="尼班诗欧美2017秋装新款女装ulzzang宽松绑带套头针织衫毛衣女萍"><img data-original="PUBLIC_IMG/main10-6.jpg" class="lazy"/></a>
-					</dt>
-					<dd>
-						<h3>￥116.00<span>￥218.00</span></h3>
-						<p>立即抢购</p>
-					</dd>
-				</dl>
-			</div>
-		</div>
 	
 		<!--主体十一部分-->
 		<div class="main11">
