@@ -17,7 +17,7 @@ return [
     // 应用命名空间
     'app_namespace'          => 'app',
     // 应用调试模式
-    'app_debug'              => false,
+    'app_debug'              => true,
     // 应用Trace
     'app_trace'              => false,
     // 应用模式状态
@@ -138,10 +138,23 @@ return [
         'taglib_begin' => '{',
         // 标签库标签结束标记
         'taglib_end'   => '}',
+        //开启全局模板布局
+        'layout_on' => false,
+        'layout_name' => 'layout',
     ],
 
     // 视图输出字符串内容替换
-    'view_replace_str'       => [],
+    'view_replace_str'       => [
+        'PUBLIC_SASS' => '/static/index/sass',
+        'PUBLIC_INDEX' => '/static/index/download',
+        'PUBLIC_JS' => '/static/index/js',
+        'PUBLIC_IMG' => '/static/index/img',
+        'POSITION' => '/static/index/position',
+
+        'ADMIN_LIB' => '/static/admin/lib',
+        'ADMIN_RES' => '/static/admin/resource',
+        'ADMIN_TEMP' => '/static/admin/temp'
+    ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
     'dispatch_error_tmpl'    => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',

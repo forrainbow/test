@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/toubu.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/zhuce.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/jquery.idcode.css"/>
+		
+		
+		<script src="PUBLIC_JS/jquery-1.12.3.js"></script>
+		<script src="PUBLIC_JS/jquery.idcode.js"></script>  
+		<script src="PUBLIC_JS/cookie.js"></script> 
+		<script src="PUBLIC_JS/gVerify.js"></script>
+		<script src="PUBLIC_JS/common.js"></script> 
+		<script src="PUBLIC_JS/zhuce.js"></script> 
+	</head>
+	<body>
+	{include file="public/header" /}
+		<!--主体部分-->
+		<div class="main1">
+			<a href="#"><img src="PUBLIC_IMG/images2/banner1 (1).jpg"/></a>
+		</div>
+	
+		<div id="main2" class="clear">
+			<div class="main2-l">
+				<span>已是韩都衣舍用户 ：</span><a href="login.html"><input type="submit" value="直接登录" class="main2-l-sub1"/></a><br/>
+				<img src="PUBLIC_IMG/images2/367-250.png"/>
+				<div class="main2-l-b">
+					<input type="text" class="main2-l-bt"/>
+					<button class="main2-l-b-bu">马上订阅<i class="iconfont">&#xe605;</i></button>
+				</div>
+			</div>
+			
+			<div class="main2-r">
+				<div class="main2-r-t">
+					<div class="main2-r-t1 clear">
+						<b>1</b>
+						<p>选择注册方式 ：</p>
+						<ul class="main2-r-t1-ul">
+							<li class="main2-r-t-li1 main2-r-t-li2">使用手机注册</li>
+							<li class="main2-r-t-li1">使用邮箱注册</li>
+						</ul>
+					</div>	
+				</div>
+				
+				<div class="main2-r-b">
+					<div class="main2-r-b1 clear">
+						<b>2</b>
+						<p>填写您的信息 ：</p>
+					</div>
+					<div class="main2-r-b2">
+						<ul class="main2-r-b2-ul1">
+							<li>
+								<em>您的手机号 ：</em>
+								<input type="text" class="main2-r-b2-ul1-in1" name="username"/>
+								<button class="main2-r-b2-bu1">发送验证码</button>
+								<span></span>
+								<div id="yan">
+									<img src="PUBLIC_IMG/images2/18.png" class="yan-img"/>
+									<h3>请填写图片上的字母或数字：</h3>
+									<input type="text" id="Txtidcode" class="txtVerification" />
+									<span id="idcode"></span>
+									<div>
+									    <button type="button" id="btns">确定</button>
+									</div>
+								</div>
+							</li>
+							<li class="main2-r-b2-li1">
+								请输入您在注册时使用的手机号码，若当前号码不用/丢失，或无法收到验证码？<a href="zhuce.html">其他验证方式</a>
+							</li>
+							<li>
+								<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;验证码 ：</em>
+								<input type="text" class="main2-r-b2-ul1-in2"/>
+								<span></span>
+							</li>
+							<li>
+								<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码 ：</em>
+								<input type="password" class="main2-r-b2-ul1-in3"/>
+								<span></span>
+							</li>
+							<li class="main2-r-b2-li1">6-16位字符，可使用字母、数字或符号的组合</li>
+							<li>
+								<em>&nbsp;&nbsp;&nbsp;确认密码 ：</em>
+								<input type="password" class="main2-r-b2-ul1-in4"/>
+								<span></span>
+							</li>
+							<li class="main2-r-b2-li1">
+								<input type="checkbox" id="main2-check" checked="checked"/><label for="main2-check"> <i>我已看过并接受<a href="#">《用户协议》</a></i></label>
+							</li>
+							<li class="main2-r-b2-li1">
+								<button class="main2-r-b2-bu2 main2-r-b2-bu3"><a href="#">同意协议并注册</a></button>
+							</li>
+						</ul>
+					
+						<ul class="main2-r-b2-ul2">
+							<li>
+								<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email ：</em>
+								<input type="text" class="main2-r-b2-ul2-in1"/>
+								<span></span>
+							</li>
+							<li class="main2-r-b2-li3">Email地址作为用户名，同时也用于接收账户信息、订单通知及密码找回等功能</li>
+							<li>
+								<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码 ：</em>
+								<input type="password" class="main2-r-b2-ul2-in2"/>
+								<span></span>
+							</li>
+							<li class="main2-r-b2-li3">8-24位字符，必须包含字母、数字的组合</li>
+							<li>
+								<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;确认密码 ：</em>
+								<input type="password" class="main2-r-b2-ul2-in3"/>
+								<span></span>
+							</li>
+							<li class="main2-r-b2-li3">请再次输入密码，两次输入必须一致</li>
+							<li>
+								<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;验证码 ：</em>
+								<input type="text" id="code_input" value="" class="main2-r-b2-ul2-in4"/>
+								<div id="v_container" style="width: 200px;height: 50px;"></div>
+
+							</li>
+							<li class="main2-r-b2-li3">
+								<input type="checkbox" id="main2-check" checked="checked"/><label for="main2-check"> <i>我已看过并接受<a href="#">《用户协议》</a></i></label>
+							</li>
+							<li class="main2-r-b2-li3">
+								<button class="main2-r-b2-bu2 main2-r-b2-bu4" id="my_button"><a href="#">同意协议并注册</a></button>
+							</li>
+						</ul>
+					
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	
+	{include file="public/footer" /}
+	</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/toubu.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/xiangqing.css"/>
+		
+		<script src="PUBLIC_JS/jquery-1.12.3.js"></script>
+		<script src="PUBLIC_JS/common.js"></script>
+		<script src="PUBLIC_JS/xiangqing.js"></script>
+		<script src="PUBLIC_JS/fangdaj.js"></script>
+	</head>
+	<body>
+		
+		{include file="public/header" /}
+		
+		<!--所在位置-->
+		<div class="main1">
+			<p>
+				您所在的位置
+				<code>></code>
+				<a href="/index">久亿集团</a>
+				<code>></code>
+				<a href="">{$brand_name}</a>
+				<code>></code>
+				<a href="/index/goods/category/brand_id/{$brand_id}/clothes_id/{$clothes_id}">{$clothes_name}</a>
+				<code>></code>
+				<a href=""> {$goods->goods_introduce}</a>
+			</p>
+		</div>
+		
+		
+		<!--主体 部分-->
+		
+		<div id="main" class="clear">
+			<!--主体左边部分-->
+			<div class="main-l">
+				<h1><img src="PUBLIC_IMG/images4/cate0.png"/></h1>
+				<ul>
+				<!-- 遍历热门分类开始 -->
+				{volist name="hot_cate" id="val"}
+					<li>
+						<i class="iconfont">&#xe605;</i>
+						<a href="/index/goods/category/brand_id/{$brand_id}/clothes_id/{$val.clothes_id}" title="{$val.name}">{$val.name}</a>
+					</li>
+				{/volist}
+				<!-- 遍历热门分类结束 -->
+				</ul>
+				<p>
+					<img src="PUBLIC_IMG/images4/zuo1.jpg" title="新品"/>
+					<img src="PUBLIC_IMG/images4/zuo2.jpg" title="新品"/>
+				</p>
+				
+			</div>
+
+			<!--主体右边部分-->
+			<div class="main-r">
+				<!--上面部分-->
+				<div class="main-r-t clear">
+					<!--图片放大镜-->
+					<div class="main-r-t-img" id="box">
+						<div class="main-r-t-img1" id="middleImg">
+							<a href="#">
+								<img src="PUBLIC_IMG/clothes/goods/{$img->goods_big}" class="main-r-t-img1-img" id="center-img"/>
+							</a>
+							<div id="middleArea"></div>
+						</div>
+						
+						<!--最大图部分-->
+						<div class="main-r-t-bgimg" id="bigArea">
+							<img src="PUBLIC_IMG/clothes/goods/{$img->goods_big}" id="big-img"/>
+						</div>
+						
+						<!--下面小图部分-->
+						<div class="main-r-t-img2" id="min">
+							<ul class="clear">
+							<!-- 主图开始 -->
+								<li>
+									<i class="iconfont">&#xe60c;</i>
+									<img src="PUBLIC_IMG/clothes/goods/{$img->goods_big}" data-msrc="PUBLIC_IMG/clothes/goods/{$img->goods_big}" data-bsrc="PUBLIC_IMG/clothes/goods/{$img->goods_big}"/>
+								</li>
+							<!-- 主图结束 -->
+								<li>
+									<i class="iconfont">&#xe60c;</i>
+										<img src="PUBLIC_IMG/clothes/goods/{$img->goods_small1}" data-msrc="PUBLIC_IMG/clothes/goods/{$img->goods_small1}" data-bsrc="PUBLIC_IMG/clothes/goods/{$img->goods_small1}"/>
+								</li>
+								<li>
+									<i class="iconfont">&#xe60c;</i>
+										<img src="PUBLIC_IMG/clothes/goods/{$img->goods_small2}" data-msrc="PUBLIC_IMG/clothes/goods/{$img->goods_small2}" data-bsrc="PUBLIC_IMG/clothes/goods/{$img->goods_small2}"/>
+								</li>
+								<li>
+									<i class="iconfont">&#xe60c;</i>
+										<img src="PUBLIC_IMG/clothes/goods/{$img->goods_small3}" data-msrc="PUBLIC_IMG/clothes/goods/{$img->goods_small3}" data-bsrc="PUBLIC_IMG/clothes/goods/{$img->goods_small3}"/>
+								</li>
+								<li>
+									<i class="iconfont">&#xe60c;</i>
+										<img src="PUBLIC_IMG/clothes/goods/{$img->goods_small4}" data-msrc="PUBLIC_IMG/clothes/goods/{$img->goods_small4}" data-bsrc="PUBLIC_IMG/clothes/goods/{$img->goods_small4}"/>
+								</li>
+							</ul>
+						</div>
+						<!--分享部分-->
+						<div class="main-r-t-img3 clear">
+							<p>
+								<button style="cursor: pointer;" class="collect" value="哈哈">
+									收藏(0)
+								</button>
+							</p>
+							<div class="main-r-t-img3-f">
+								<ul class="clear">
+									<li class="main-r-li1">
+										<a href="#"><img src="PUBLIC_IMG/images4/images/f_11.jpg"/> 分享到： </a>
+										<div class="main-r-li">
+											<h2>分享到</h2>
+											<ol class="clear">
+												<li><a href="#"><img src="PUBLIC_IMG/images4/images/f2.jpg"/> &nbsp;QQ空间</a></li>
+												<li><a href="#"><img src="PUBLIC_IMG/images4/images/f3.jpg"/> &nbsp;新浪微博</a></li>
+												<li><a href="#"><img src="PUBLIC_IMG/images4/images/f6.jpg"/> &nbsp;腾讯微博</a></li>
+												<li><a href="#"><img src="PUBLIC_IMG/images4/images/f9.jpg"/> &nbsp;腾讯朋友</a></li>
+												<li><a href="#"><img src="PUBLIC_IMG/images4/images/f10.jpg"/> &nbsp;
+												<li><a href="#"><img src="PUBLIC_IMG/images4/images/f14.jpg"/> &nbsp;QQ好友</a></li>
+												<li><a href="#"><img src="PUBLIC_IMG/images4/images/f_11.jpg"/> &nbsp;更多...</a></li>
+											</ol>
+											<p><img src="PUBLIC_IMG/images4/images/f_11.jpg"/> 百度分享</p>
+										</div>
+									</li>
+									<li>
+										<a href="#" title="分享到QQ空间"><img src="PUBLIC_IMG/images4/images/f2.jpg"/></a>
+									</li>
+									<li>
+										<a href="#" title="分享到新浪微博"><img src="PUBLIC_IMG/images4/images/f3.jpg"/></a>
+									</li>
+									<li>
+										<a href="#" title="分享到腾讯微博"><img src="PUBLIC_IMG/images4/images/f6.jpg"/></a>
+									</li>
+									<li>
+										<a href="#" title="分享到人人网"><img src="PUBLIC_IMG/images4/images/f5.jpg"/></a>
+									</li>
+									<li>
+										<a href="#" title="分享到网易微博"><img src="PUBLIC_IMG/images4/images/f_21.jpg"/></a>
+									</li>
+									<li>
+										<a href="#" title="累计分享0次"><img src="PUBLIC_IMG/images4/images/f_23.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+					<!--价格部分-->
+					<div class="main-r-t-r">
+						<div class="main-r-t-r1">
+							<h2>	
+           						 {$goods->goods_introduce}
+								<a href="#">【全智贤秋装新品发布会】领券满199减20/满399减80/满599减130！</a>
+							</h2>
+							<ul>
+								<li>
+									<b>商品货号： &nbsp;&nbsp; </b>
+									<b>NW9180 &nbsp;&nbsp;&nbsp;</b>
+									<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 售价： ￥<span>{$goods->market_price}</span></b>
+								</li>
+								<li>
+									<b>促 销 价 ：<i>￥{$goods->member_price}</i></b>
+								</li>
+								<li>
+									<b>销　　量：  </b>
+									&nbsp;&nbsp;&nbsp;&nbsp;{$goods->month_sale}件
+								</li>
+								<li>
+									<b>用户评论 : &nbsp;&nbsp;</b>
+									<img src="PUBLIC_IMG/images4/images/xi_03.jpg" title="五星"/>
+									<b>&nbsp;&nbsp;（共有<em> {$goods->appraise} </em>条评论）</b>
+								</li>
+							</ul>
+						</div>
+						<div class="main-r-t-r2">
+							<!--尺寸-->
+							<div class="main-r-t-r2-t1 clear">
+								<h3>尺  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码  :</h3>
+								<ul>
+									<li class="main-r-t-r2-t1-li">S <img src="PUBLIC_IMG/images4/images/xi_07.jpg" class="main-r-t-r2-t1-img" style="display: block;"/></li>
+									<li>M <img src="PUBLIC_IMG/images4/images/xi_07.jpg" class="main-r-t-r2-t1-img"/></li>
+									<li>L <img src="PUBLIC_IMG/images4/images/xi_07.jpg" class="main-r-t-r2-t1-img"/></li>
+								</ul>
+							</div>
+							<!--颜色-->
+							<div class="main-r-t-r2-t2 clear">
+								<h3>颜  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色  :</h3>
+								<ul>
+									<li>白色</li>
+									<li class="main-r-t-r2-t2-li main-r-t-r2-t2-li1">黑色
+										<img src="PUBLIC_IMG/images4/images/xi_07.jpg" class="main-r-t-r2-t2-img"/>
+									</li>
+									<li>红色</li>
+								</ul>
+							</div>
+							<!--数量-->
+							<div class="main-r-t-r2-t3 clear">
+								<span>数  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量  :</span>
+								<img src="PUBLIC_IMG/images4/images/xi_11.jpg" class="main-r-t-r2-t3-img1"/>
+								<input type="text" value="1" class="main-r-t-r2-t3-in"/>
+								<img src="PUBLIC_IMG/images4/images/xi_14.jpg" class="main-r-t-r2-t3-img2"/>
+								（库存33件）
+							</div>
+							<div class="main-r-t-r2-t4">
+								<p>你已选择了<span>[XS]</span><span>[S]</span><span>[M]</span><span>[L]</span> <b>[黑色]</b></p>
+							</div>
+							<!--加入购物车-->
+							<div class="main-r-t-r2-t5">
+								<a href="#" title="立即购买"><img src="PUBLIC_IMG/images4/images/shop_03.jpg"/></a>
+								<a href="#" title="加入购物车"><img src="PUBLIC_IMG/images4/images/shop_05.jpg"/></a>
+							</div>
+						</div>
+						
+						<div class="main-r-t-r3">
+							<p>
+								在线客服 ：  <img src="PUBLIC_IMG/images4/images/qq_03.jpg">
+								<span>官方微信：</span>
+								<b class="main-r-t-r3-b"><img src="PUBLIC_IMG/images4/weixin.png"/><i><img src="PUBLIC_IMG/images4/ew_0328.jpg"/></i></b>
+								<img src="PUBLIC_IMG/images4/sys.gif"/>
+							</p>
+							<p>
+								支付方式 ： 支付宝  网上银行付款
+								<span>服务承诺 ：</span>
+								<img src="PUBLIC_IMG/images4/service.png"/>
+							</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		
+		
+		</div>
+		
+	{include file="public/footer" /}
+		
+	</body>
+</html>

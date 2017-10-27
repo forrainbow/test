@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/toubu.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/people.css"/>
+		<!-- 地址插件的css -->
+		<link href="POSITION/css/city-picker.css" rel="stylesheet" type="text/css" />
+		<!-- <link href="POSITION/css/bootstrap.css" rel="stylesheet" type="text/css" /> -->
+		<!-- 地址插件的css -->
+
+		<!-- 自己的js -->
+		<script src="PUBLIC_JS/jquery-1.12.3.js"></script>
+		<script src="PUBLIC_JS/common.js"></script>
+		<script src="PUBLIC_JS/people.js"></script>
+		<script src="PUBLIC_JS/laydate/laydate.js"></script>
+		<!-- 自己的js -->
+		<!-- 地址插件的js -->
+		<script src="POSITION/js/jquery.js"></script>
+		<script src="POSITION/js/bootstrap.js"></script>
+		<script src="POSITION/js/city-picker.data.js"></script>
+		<script src="POSITION/js/city-picker.js"></script>
+		<script src="POSITION/js/main.js"></script>
+		<!-- 地址插件的js -->
+	</head>
+	<body>
+
+		{include file="public/header" /}
+
+		<!--我的位置部分-->
+		<div id="wei">
+			<p>
+				您当前的位置：<a href="#">韩都衣舍</a> > <a href="#">我的韩都</a>
+			</p>
+		</div>
+		
+		<!--主体部分-->
+		<div id="main">
+			<div class="main clear">
+				<div class="main-l">
+					<a href="#" class="main-l-a1"><span>我的韩都</span></a>
+					<div class="main-l-b">
+						<dl class="menu">
+							<dt>
+								交易管理
+								<i class="iconfont main1-l-i1">&#xe602;</i>
+								<i class="iconfont main1-l-i2">&#xe605;</i>
+							</dt>
+							<dd>
+								<ul>
+									<li class="menu-li"><a href="/index/goods/shop_car">我的购物车</a></li>
+									<li class="menu-li1 menu-li">我的订单</li>
+									<li class="menu-li2 menu-li">我的收藏</li>
+									<li class="menu-li3 menu-li">我的足迹</li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<dl class="menu">
+							<dt>
+								我的账户
+								<i class="iconfont main1-l-i1">&#xe602;</i>
+								<i class="iconfont main1-l-i2">&#xe605;</i>
+							</dt>
+							<dd>
+								<ul>
+									<li class="menu-li5 menu-li">我的特权</li>
+									<li class="menu-li6 menu-li">我的积分</li>
+									<li class="menu-li7 menu-li">我的优惠券</li>
+									<li class="menu-li8 menu-li">我的包邮卡</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="menu" style="border-bottom: 0;">
+							<dt>
+								个人信息
+								<i class="iconfont main1-l-i1">&#xe602;</i>
+								<i class="iconfont main1-l-i2">&#xe605;</i>
+							</dt>
+							<dd>
+								<ul>
+									<li class="menu-li9 menu-li">基本资料</li>
+									<li class="menu-li10 menu-li">修改密码</li>
+									<li class="menu-li11 menu-li">地址管理</li>
+									<li class="menu-li12 menu-li">安全验证</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="menu">
+							<dt>
+								客户服务
+								<i class="iconfont main1-l-i1">&#xe602;</i>
+								<i class="iconfont main1-l-i2">&#xe605;</i>
+							</dt>
+							<dd>
+								<ul>
+									<li class="menu-li3 menu-li">售后服务</li>
+									<li class="menu-li4 menu-li">我的评价</li>
+									<li class="menu-li"><a href="msg.html">建议/反馈</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					
+					<div class="main-l-img">
+						<a href="#"><img src="PUBLIC_IMG/images5/1.jpg"/></a>
+						<a href="#"><img src="PUBLIC_IMG/images5/2.jpg"/></a>
+					</div>
+				</div>
+				
+				<div class="main-r">
+					<!--我的韩都-->
+					<div class="main-r1">
+						<div class="main-r1-t clear">
+							<div class="main-r1-t-img">
+								<a href="#" class="main-r1-t-img-a1">
+									<img src="PUBLIC_IMG/images5/2.png" alt="" />
+									<p>修改头像</p>									
+								</a>
+								<a href="#" class="main-r1-t-img-a">编辑个人资料</a>
+							</div>
+							<div class="main-r1-t-txt">
+								<ul>
+									<li>
+										<span></span> 欢迎您！
+									</li>
+									<li>
+										<i class="iconfont">&#xe618;</i>
+										<img src="PUBLIC_IMG/images5/hui_15.jpg" alt="" />
+										<b>您的<a href="#">经验值</a>为0，只要有一笔购物就能升级为普通会员哦</b>
+									</li>
+									<li style="color:#3366cc;cursor: pointer;" class="wan">
+										完善账户信息，随时随地享受快乐购物！还能获得100积分哦~
+									</li>
+									<li>
+										我的优惠信息：
+            							<a href="#" class="main-r1-t-txt-a">
+            								韩都优惠券
+            								<span class="main-r1-t-txt-span">（1）</span>
+            							</a>
+            							<a href="#"  class="main-r1-t-txt-a">我的收获地址</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="main-r1-t1">
+							<p>您上一次的登录时间：{$user->update_time} ,，您最近30天内提交了0个订单</p>
+						</div>						
+						<div class="main-r1-t2">
+							<h2>我的交易提醒：</h2>
+							<div class="main-r1-t2-b">
+								<a href="">待发货 <span class="red">(0)</span></a>
+								<a href="">待收货 <span class="red">(0)</span></a>
+								<a href="">待评价 <span class="red">(0)</span></a>
+							</div>
+						</div>			
+						<!--购物车-->
+						<div class="main-r1-shop">
+							<div class="main-r1-shop1 clear">
+								<span>我的购物车：</span>
+								<a href="shopping.html" class="main-r1-shop1-a">查看购物车></a>
+							</div>
+							<div class="main-r1-shop2">
+								<div class="main-r1-shop2-img">
+									<img src="PUBLIC_IMG/images5/6.png" alt="" />
+								</div>
+								<ul>
+									
+								</ul>
+							</div>
+						</div>
+						
+						<!--猜你喜欢-->
+						<div class="main-r1-like">
+							<h2>猜你喜欢</h2>
+							<div class="main-r1-like1 clear">
+								<div class="zuo">
+									<i class="iconfont">&#xe689;</i>
+								</div>
+								<div class="you">
+									<i class="iconfont">&#xe600;</i>
+								</div>
+								<div class="like">
+									<div class="main-r1-like2 clear">
+										<dl>
+											<dt>
+												<a href="#"><img src="PUBLIC_IMG/images5/3.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="">韩都衣舍2016秋装韩版百搭上衣打底衬衣立领韩范</a>
+												<p>售价：  <span> ￥198</span></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="#"><img src="PUBLIC_IMG/images5/4.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="">韩都衣舍2016秋装韩版百搭上衣打底衬衣立领韩范</a>
+												<p>售价：  <span> ￥198</span></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="#"><img src="PUBLIC_IMG/images5/5.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="">韩都衣舍2016秋装韩版百搭上衣打底衬衣立领韩范</a>
+												<p>售价：  <span> ￥198</span></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="#"><img src="PUBLIC_IMG/images5/6.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="">韩都衣舍2016秋装韩版百搭上衣打底衬衣立领韩范</a>
+												<p>售价：  <span> ￥198</span></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="#"><img src="PUBLIC_IMG/images5/7.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="">韩都衣舍2016秋装韩版百搭上衣打底衬衣立领韩范</a>
+												<p>售价：  <span> ￥198</span></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="#"><img src="PUBLIC_IMG/images5/8.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="">韩都衣舍2016秋装韩版百搭上衣打底衬衣立领韩范</a>
+												<p>售价：  <span> ￥198</span></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="#"><img src="PUBLIC_IMG/images5/9.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="">韩都衣舍2016秋装韩版百搭上衣打底衬衣立领韩范</a>
+												<p>售价：  <span> ￥198</span></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="#"><img src="PUBLIC_IMG/images5/10.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="">韩都衣舍2016秋装韩版百搭上衣打底衬衣立领韩范</a>
+												<p>售价：  <span> ￥198</span></p>
+											</dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="#"><img src="PUBLIC_IMG/images5/11.jpg"/></a>
+											</dt>
+											<dd>
+												<a href="">韩都衣舍2016秋装韩版百搭上衣打底衬衣立领韩范</a>
+												<p>售价：  <span> ￥198</span></p>
+											</dd>
+										</dl>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+					<!--我的订单-->
+					<div class="main-r2">
+						<div class="main-r2-t1 clear">
+							<span>我的订单</span>
+							<p>
+								<i class='iconfont'>&#xe62a;</i>
+								订单回收站
+								<img src="PUBLIC_IMG/images5/new_03.jpg" alt="" />
+							</p>
+						</div>
+						<div class="main-r2-t2">
+							<form action="">
+								<input type="text" placeholder="订单编号" />
+								<input type="button" value="搜索" />
+							</form>
+						</div>
+						<div class="main-r2-t3">
+							<span>下单时间：</span>
+							<select name="">
+								<option value="">全部</option>
+								<option value="">30天内</option>
+								<option value="">今年</option>
+								<option value="">2014</option>
+								<option value="">2013</option>
+								<option value="">2012</option>
+							</select>
+							<span>交易状态：</span>
+							<select name="">
+								<option value="0">选择交易状态</option>
+								<option value="1">待支付</option>
+								<option value="2">待发货</option>
+								<option value="3">已发货</option>
+								<option value="4">已完成</option>
+								<option value="5">已取消</option>
+							</select>
+							<span>评价状态：</span>
+							<select name="">
+								<option value="0">全部</option>
+								<option value="1">未评价</option>
+								<option value="2">已评价</option>
+								
+							</select>
+						</div>
+					
+						<div class="main-r2-t4">
+							<div class="main-r2-t4-t">
+								<span style="width:234px">商品名称</span>
+								<span style="width:58px">单价</span>
+								<span style="width:41px">数量</span>
+								<span style="width:83px">售后</span>
+								<span style="width:109px">实付款</span>
+								<span style="width:100px">
+									<select name="">
+										<option value="">选择交易状态</option>
+										<option value="">待支付</option>
+										<option value="">待发货</option>
+										<option value="">已发货</option>
+										<option value="">已完成</option>
+										<option value="">已取消</option>
+									</select>
+								</span>
+								<span style="width:92px">交易操作</span>
+								<span style="width:67px">其他操作</span>
+							
+							</div>
+							<div class="main-r2-t4-b">
+								<div class="main-r2-t4-b-k">
+									<p>
+										暂无订单，这就去挑选商品： 
+										<a href="index.html">商城首页</a>
+										<b class="shou">我的收藏</b>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--我的收藏-->
+					<div class="main-r3">
+						<div class="main-r3-t1">
+							<span>我的收藏夹</span>							
+						</div>
+						<div class="main-r3-t2">
+							<a href="" class="main-r3-t2-a1">全部宝贝</a>
+							<a href="" class="main-r3-t2-a2">收藏时间</a>
+						</div>
+						<div class="main-r3-t3">
+							<div class="main-r3-t3-t">
+								<input type="checkbox" id="check1"/> &nbsp;<label for="check1">全选</label>
+								<a href=""><i class="iconfont">&#xe62a;</i>  删除</a>
+							</div>
+							<div class="main-r3-t3-t">
+								
+							</div>
+						</div>
+						<div>
+							<ul>
+							<!-- 遍历收藏内容开始 -->
+							{volist name="coll" id="val"}
+								<li>
+									<div>
+										<a href="">
+											<img src="PUBLIC_IMG/clothes/goods/{$val.main_img}" alt="">
+										</a>
+									</div>
+									<div>
+										<a href="">{$val.goods_introduce}</a>
+									</div>
+									<div>
+										<span></span>
+										会员价<span>{$val.member_price}</span>
+										原价<span>{$val.market_price}</span>
+									</div>
+								</li>
+							{/volist}
+							<!-- 遍历收藏内容结束 -->
+							</ul>
+						</div>
+						<div class="main-r3-t4">
+							<p>总计有 <span style="color: red">{$count}</span> 个记录</p>
+						</div>
+					</div>
+
+					<!--售后服务-->
+					<div class="main-r4">
+						<div class="main-r4-t1">
+							<span>售后服务</span>							
+						</div>
+						<div class="main-r4-t2">
+							<div class="main-r4-t2-t">
+								<span style="width:14%">订单编号</span>
+								<span style="width:11%">商品图片</span>
+								<span style="width:10%">商品规格</span>
+								<span style="width:11%">退款金额</span>
+								<span style="width:8%">退货数量</span>
+								<span style="width:16%">
+									<select name="">
+										<option value="">申请时间</option>
+										<option value="">最近三个月</option>
+										<option value="">三个月以前</option>
+									</select>
+								</span>
+								<span style="width:13%">
+									<select name="">
+										<option value="">全部状态</option>
+										<option value="">处理中</option>
+										<option value="">同意退货</option>
+										<option value="">已完成</option>
+									</select>
+								</span>
+								<span style="width:11%">操作</span>
+							</div>
+							<div class="main-r4-t2-b">
+								<p>暂无退换货订单</p>
+								<div class="">
+									
+								</div>
+							</div>
+						</div>
+						<div class="main-r4-t3">
+							<p>
+								相关帮助：
+								<a href="">退换货政策</a>
+								<a href="">退款说明</a>
+								<a href="">退换货办理流程</a>
+								<a href="">韩都衣舍运费专拍</a>
+								<a href="">素缕运费专拍</a>
+							</p>
+						</div>
+						<div class="main-r4-t4 clear">
+							<h2>服务说明：</h2>
+							<div class="main-r4-t4-b">
+								<div class="main-r4-t4-b1">
+									<p><strong>久亿集团品牌退货请发至：</strong></p>
+									<p>广东省深圳市西部硅谷</p>
+									<p>收件人：刘波</p>
+									<p>电话：400-806-7777;</p>
+									<p>邮编：250013</p>
+								</div>
+								<div class="main-r4-t4-b2">
+									<p><strong>合作品牌退货请发至：</strong></p>
+									<p>广东省深圳市西部硅谷</p>
+									<p>收件人：周威（素缕）</p>
+									<p>电话：400-806-7777;</p>
+									<p>邮编：250013</p>
+								</div>
+							</div>							
+						</div>
+						<div class="main-r4-t5">
+							<h2>主要事项：</h2>
+							<p>您发回来时把您的用户名和相关事宜写清楚哦！</p>
+							<p>亲不要发【到付】【平邮】【申通】我们是收不到的！</p>
+							<p>发圆通中通都可以的，并且都是上门收件， 谢谢亲！（注：衣衣一定要保证完好无损，原样寄回哦）</p>
+							<p>在你的订单显示退款成功后，如果您用网银支付，退款金额会在5-7个工作日内自动汇到您的银行账号上，如有任何问题可以直接与我们联系。</p>
+							<p>联系方式：400-806-7777【上班时间9:00-23:00】</p>
+						</div>
+					
+					</div>
+
+					<!--我的评价-->
+					<div class="main-r5">
+						<p>暂时还没有任何用户评论 </p>
+					</div>
+					
+					<!--我的特权-->
+					<div class="main-r6">
+						<div class="main-r6-t1">
+							<span>我的特权</span>							
+						</div>
+						<div class="main-r6-t2">
+							<div class="main-r6-t2-t">
+								<span>15207459706</span>
+								<p>
+									您的等级是
+									<b>注册会员</b>
+									 , 您还差
+									<strong>1</strong>
+									 经验值达到
+									 <b>普通会员</b>
+								</p>
+								<img src="PUBLIC_IMG/images5/01.jpg" alt="" />
+								<div class="main-r6-t2-t1">
+									<form action="">
+										<input type="text" />
+										<img src="PUBLIC_IMG/images5/footer00.png" alt="" />
+									</form>
+								</div>
+								<img src="PUBLIC_IMG/images5/03.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+					
+					<!--我的积分-->
+					<div class="main-r7">
+						<div class="main-r7-t1">
+							<span>我的积分</span>							
+						</div>
+						<div class="main-r7-t2">
+							<span>15207459706</span>,欢迎你，您的积分：<b>0</b>
+							<a href="reward.html">去签到挣积分、兑换超值商品吧~~~</a>
+						</div>
+						<div class="main-r7-t3">
+							你有<span>0</span>个积分将在 <b>2018年01月01日过期</b>
+						</div>
+						<div class="main-r7-t4 clear">
+							<h2>我的积分</h2>
+							<ul class="main-r7-t4-ul clear">
+								<li style="border-right: 0;">积分收入</li>
+								<li style="border-right: 0;">积分支出</li>
+								<li>过期积分</li>
+							</ul>
+						</div>
+						<div class="main-r7-t5">
+							<table border="" cellspacing="" cellpadding="">
+								<tr>
+									<th style="width:32%">积分来源</th>
+									<th style="width:18%">积分变换</th>
+									<th style="width:27%">使用日期</th>
+									<th style="width:22%">备注</th>
+								</tr>
+								<tr>
+									<td colspan="4">没有数据</td>
+								</tr>
+							</table>
+						</div>
+						<div class="main-r7-t6">
+							总计<span>0</span>个记录
+						</div>
+					</div>
+					
+					<!--点击地址管理中的地址修改和添加新地址-->
+					<div class="place">
+						<div class="place1">
+							<h3>
+								<span>添加收货地址</span>
+								<i class="iconfont icon">&#xe637;</i>
+							</h3>
+							<div class="place2">
+								<form action="">
+									<ul>
+										<li>
+											<label for="text1"><em>* </em>收货人：</label><input type="text" id="text1"/>
+										</li>
+										<li>
+											<label><em>* </em>所在地址：</label>
+											<select name="">
+												<option value="">请选择</option>
+											</select>
+											<select name="">
+												<option value="">请选择</option>
+											</select>
+											<select name="">
+												<option value="">请选择</option>
+											</select>
+										</li>
+										<li>
+											<label for="text2"><em>* </em>详细地址：</label><input type="text" id="text2"/>
+										</li>
+										<li>
+											<label for="text3"><em>* </em>电话：</label><input type="text" id="text3"/>
+										</li>
+										<li>
+											<label for="text4">身份证号：</label><input type="text" id="text4"/>
+										</li>
+										<li>
+											当您购买海淘商品时，收货人和身份证号均为必填项；请务必填写真实的，否则海关清关将不通过，将耽误您的购物！
+										</li>
+									</ul>
+								</form>
+							</div>
+							<div class="place3">
+								<input type="button" class="bn1" value="确定"/>
+								<input type="button" class="bn2" value="取消"/>
+								<input type="checkbox" /> 默认
+							</div>
+						</div>
+					</div>
+					
+					<!--我的优惠劵-->
+					<div class="main-r8">
+						<div class="main-r8-t1">
+							<span>我的优惠劵</span>							
+						</div>
+						<a href=""><img src="PUBLIC_IMG/images5/bonus.jpg"/></a>
+						<div class="main-r8-t2">
+							<span>+</span>
+							优惠劵序列号
+							<input type="text"/>
+							<input type="button" value="添加优惠劵"/>
+						</div>
+						<div class="main-r8-t3">
+							状态：<select >
+								<option value="">选择优惠券状态</option>
+								<option value="">未使用</option>
+								<option value="">已使用</option>
+								<option value="">已过期</option>
+							</select>
+						</div>
+						<div class="main-r8-t4">
+							<table border="" cellspacing="" cellpadding="">
+								<tr class="main-r8-t4-tr">
+									<th style="width:12%">优惠券序号</th>
+									<th style="width:27%">优惠券名称</th>
+									<th style="width:12%">优惠券金额</th>
+									<th style="width:14%">最低消费金额</th>
+									<th style="width:12%">截止使用日期</th>
+									<th style="width:10%">优惠券状态</th>
+									<th style="width:10%">操作</th>
+								</tr>
+								<!-- 遍历优惠卷开始 -->
+								{volist name="coupon" id="vo"}
+								<tr>
+									<td>{$vo.num}</td>
+									<td>{$vo.coupon_name}</td>
+									<td>{$vo.coupon_money}</td>
+									<td>{$vo.low_money}</td>
+									<td>{$vo.valid_end_time|date="Y-m-d",###}</td>
+									<td>{switch name="$vo.coupon_status" }
+									{case value="0" }已过期{/case}
+									{case value="1"}已使用{/case}
+									{default /}未使用
+									{/switch}
+									</td>
+									<td><a href="">删除</a></td>
+								</tr>
+								{/volist}
+								<!-- 遍历优惠卷结束 -->
+							</table>
+						</div>
+					
+						<div class="main-r8-t5">
+							总计<b style="color: red;">{$coupon_sum}</b>个记录
+						</div>
+						<div class="main-r8-t6">
+							<h2>优惠券使用规则:</h2>
+							<p>1、单笔订单可同时使用一张优惠券和一张红包；</p>
+							<p>2、优惠券和红包可叠加使用，不设找零，不可兑换现金;</p>
+							<p>3、请保证您的优惠券、红包在有效期内使用，过期自动作废;</p>
+							<p>4、优惠券不能跨品牌使用，含多品牌商品的综合订单使用子品牌优惠券时，只有订单中的子品牌商品才能享受优惠券优惠；</p>
+							<p>5、使用优惠券、红包的订单发生退货时，优惠券、红包将不退回，按实际各商品所占支付比例退款。且优惠券不可再次使用；</p>
+							<p>6、订单取消后，优惠券会自动回到用户中心-我的优惠券中，再下订单可以选择使用，如果过期优惠券将无法再次使用。</p>
+							<p>本规则最终解释权归韩都衣舍所有,您若有疑问，请拨打免费客服电话：400-806-7777。</p>
+						</div>
+					</div>
+					
+					<!--我的包邮卡-->
+					<div class="main-r9">
+						<div class="main-r9-t1 clear">
+							<span>我的订单</span>
+							<select name="">
+								<option value="">全部</option>
+								<option value="">可用</option>
+								<option value="">不可用</option>
+							</select>
+						</div>
+						<div class="main-r9-t2">
+							<table border="" cellspacing="" cellpadding="">
+								<tr class="main-r9-t2-tr">
+									<th style="width:12%;">包邮卡序号</th>
+									<th style="width:17%;">包邮卡名称</th>
+									<th style="width:9%;">可用次数</th>
+									<th style="width:9%;">使用次数</th>
+									<th style="width:15%">开始使用日期</th>
+									<th style="width:15%">截止使用日期</th>
+									<th style="width:10%">包邮卡状态</th>
+								</tr>
+								<tr>
+									<td colspan="7">没有数据</td>
+								</tr>
+							</table>
+						</div>
+						<div class="main-r9-t3">
+							总计<b>0</b>个记录
+						</div>
+						<div class="main-r9-t4">
+							<span>+</span>
+							包邮卡序列号
+							<input type="text"/>
+							<input type="button" value="添加包邮卡"/>
+						</div>
+					</div>
+					
+					<!--基本资料-->
+					<div class="main-r10">
+						<div class="main-r10-t1">
+							<span>我的基本资料</span>							
+						</div>
+						<div class="main-r10-t2">
+							<p>亲爱的<b style="color: red;">{$user->username}</b>，欢迎您！</p><br>
+								<div class="item">
+									<h3>当前头像：</h3>
+									<div class="item1">
+									  <img src="PUBLIC_IMG/images5/2.png" alt="" />
+										<h4>
+										<form action="/index/upload/photo" enctype="multipart/form-data" method="post" id="upPhoto">
+											<input type="file" name="image" class="file" /> <br><br>
+											<!-- <input type="submit" value="上传" class="upload" /> -->
+											<span class="upload" style="cursor: pointer;">上传</span>
+										</form>
+										</h4>
+										<script type="text/javascript">
+											$('.upload').click(function() {
+												var url = '/index/upload/photo';
+												$.ajax({  
+													url: url,  
+													type: 'POST',  
+													data: new ($("#upPhoto")[0]),  
+													async: false, 
+													cache: false,
+													contentType: false,  
+													processData: false,
+													success:function(data){
+														console.log(data);
+													}
+												});
+											});
+										</script>
+									</div>
+								</div>
+								<div class="item">
+									<div class="item-l">
+										<span>*&nbsp;</span>
+										用户名：
+									</div>
+									<div class="item-r">
+										<input type="text" value="15207459706" disabled/>
+									</div>
+								</div>
+								<div class="item">
+									<div class="item-l">
+										<span>*&nbsp;</span>
+										会员类型：
+									</div>
+									<div class="item-r">
+										<span></span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="item-l">
+										<span>*&nbsp;</span>
+										真实姓名：
+									</div>
+									<div class="item-r">
+										<input type="text" class="realname" value="{$user->realname}" />
+									</div>
+								</div>
+								<div class="item">
+									<div class="item-l">
+										<span>*&nbsp;</span>
+										性别：
+									</div>
+									<div class="item-r sex">
+										<input type="radio" name="radio" id="baomi" {if ($user->sex==0)}checked{/if}/> <label for="baomi">保密</label>
+										<input type="radio" name="radio" id="nan" {if ($user->sex==1)}checked{/if}/> <label for="nan">男</label>
+										<input type="radio" name="radio" id="nv" {if ($user->sex==2)}checked{/if}/> <label for="nv">女</label>
+									</div>
+								</div>
+								<div class="item">
+									<div class="item-l">
+										<span>*&nbsp;</span>
+										出生日期：
+									</div>
+									<div class="item-r">
+										<input type="text" id="test1" class="birthday" value="{$user->birthday}">
+									</div>
+								</div>
+								<div class="item" style="position: relative;height:50px;overflow: visible;">
+									<div class="item-l">
+										<span>*&nbsp;</span>
+										所在地：
+									</div>
+									<div class="item-r">
+									<!-- 地址插件 -->
+										<div class="container" style="position: absolute;left:85px;top:8px;z-index: 10">
+											<div class="docs-methods">
+											<form class="form-inline" style="padding:0">
+												<div id="distpicker">
+												<div class="form-group">
+													<div style="position: relative;">
+								<input id="city-picker3" class="form-control place" readonly type="text"  data-toggle="city-picker" value="{$user->place}">
+													</div>
+											</div>
+											<div class="form-group" style="margin-top: 3px">
+												<button class="btn btn-warning" id="reset" type="button">重置</button>
+												<button class="btn btn-danger" id="destroy" type="button">确定</button>
+												</div>
+											</div>
+											</form>
+											</div>
+										</div>
+										<!-- 地址插件 -->
+									</div>
+								</div>
+								<div class="item">
+									<div class="item-l">
+										<span>*&nbsp;</span>
+										详细地址：
+									</div>
+									<div class="item-r">
+										<input type="text" style="width:315px" class="address" value="{$user->address}" />
+									</div>
+								</div>
+								<div class="item">
+									<div class="item-l">
+										<span>*&nbsp;</span>
+										手机号码：
+									</div>
+									<div class="item-r">
+										<input type="text" class="phone" value="{$user->phone}" />
+									</div>
+								</div>
+								<div class="item">
+									<div class="item-l">
+										<span>*&nbsp;</span>
+										email：
+									</div>
+									<div class="item-r">
+										<input type="text" class="email" value="{$user->email}" />
+									</div>
+								</div>
+								<div class="item">
+									<input type="submit" value="保存" class="save" />&nbsp;
+									&nbsp;<span style="color: red;" class="msg"></span>
+								</div>							
+
+							<div class="text">
+								<p>1.完善基本资料可获得100积分（积分使用详见"我的积分--<a href="#">积分规则</a>）</p>
+								<p>2.真实姓名和生日只能修改一次。</p>
+								<p>3.积分仅首次完善资料赠送，完善信息后，更改资料无法重复获得积分。</p>
+								
+							</div>
+						</div>
+					</div>
+					
+					<!--修改密码-->
+					<div class="main-r11">
+						<div class="main-r11-t1">
+							<span>修改密码</span>							
+						</div>
+						<div class="main-r11-t2">
+								<div class="item">
+									<div class="item-l">
+										  原密码：
+									</div>
+									<div class="item-l">
+										<input type="password" class="oldpass" />
+									</div>
+								</div>
+								<div class="item">
+									<div class="item-l">
+										  新密码：
+									</div>
+									<div class="item-l">
+										<input type="password" class="newpass" />
+									</div>
+								</div>
+								<div class="item">
+									<div class="item-l">
+										  确认密码：
+									</div>
+									<div class="item-l">
+										<input type="password" class="newpass1" /><br>
+									</div>
+								</div>
+								<div class="item">
+									<input type="submit" value="保存" class="savepass" />
+									&nbsp;&nbsp;<span style="color: red;" class="pass_msg"></span>
+								</div>	
+						</div>
+					</div>
+					
+					<!--地址管理-->
+					<div class="main-r12">
+						<div class="main-r12-t1 clear">
+							<span>我的订单</span>
+							<p class="main-r12-p">
+								添加新地址
+							</p>
+						</div>
+						<div class="main-r12-t2">
+							<table border="" cellspacing="" cellpadding="">
+								<tr>
+									<th style="width:14%;">收货人</th>
+									<th style="width:38%;">详细地址</th>
+									<th style="width:18%;">电话/手机</th>
+									<th style="width:29%;">操作</th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>
+										<span>默认地址</span>
+										<b>
+											<em style="color: #3366cc;cursor: pointer;" class="xiugai">修改</em>
+											 | 
+											<a href="">删除</a>
+										</b>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<!--安全验证-->
+					<div class="main-r13">
+						<div class="main-r13-t1">
+							<div class="main-r13-t2">
+								<div class="main-r13-t2-t">
+									<p>
+										<img src="PUBLIC_IMG/images5/07.png" alt="" />
+										<span>请完成账户安全验证</span>
+									</p>
+									<p style="margin-left: 37px;">验证手机和邮箱可帮助您快速找回密码，并可接收订单处理、退款、账户余额变动等消息提醒</p>
+								</div>
+								<div class="main-r13-t2-b">
+									<div class="main-r13-t2-b-img">
+										<img src="PUBLIC_IMG/images5/05.png" alt="" />
+									</div>
+									<div class="main-r13-t2-b-txt">
+										<b class="main-r13-t2-b-txt-a">邮箱验证></b>
+										<p>15207459706</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--安全验证中的邮箱验证-->
+					<div class="main-r14">
+						
+							发送验证邮件到 <input type="text" /><br/>
+							<p>发送邮件</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	
+	{include file="public/footer" /}
+	
+	</body>
+</html>
+
+<script type="text/javascript">
+//执行一个laydate实例
+//加载时间日期
+laydate.render({
+  elem: '#test1' //指定元素
+});
+
+// $('.upload').click(function (){
+// 	var url = 'www.jydream.com/index/upload/photo';
+// 	var val = $('.file').val();
+// 	$.post(url,{},function (){
+		
+// 	});
+// });
+</script>

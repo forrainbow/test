@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/toubu.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/jquery.idcode.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/login.css"/>
+		
+		<script src="PUBLIC_JS/jquery-1.12.3.js"></script>
+		<script src="PUBLIC_JS/common.js"></script>
+		<script src="PUBLIC_JS/jquery.idcode.js"></script>  
+		<script src="PUBLIC_JS/cookie.js"></script> 
+		<script src="PUBLIC_JS/login.js"></script>
+		
+	</head>
+	<body>
+		
+	{include file="public/header" /}
+		
+		<!--主体部分-->
+		<div id="main">
+			<div class="main1">
+				<a href="#"><img src="PUBLIC_IMG/images2/banner1.jpg"/></a>
+			</div>
+			<div class="main2 clear">
+				<div class="main2-l">
+					<img src="PUBLIC_IMG/images2/410-290.png"/>
+				</div>
+				<div class="main2-r">
+					<div class="main2-r-t">
+						<h2>用户登录</h2>
+						<form action="">
+							用户名 ：<input type="text" placeholder="邮箱地址/手机号" class="main2-r-t-i1" name="username" /><br/>
+							&nbsp;&nbsp;&nbsp;密码 ：<input type="password" class="main2-r-t-i3" name="password" /><br/>
+							验证码 ：<input type="text" class="main2-r-t-i2" id="Txtidcode" class="txtVerification"/>
+							<span id="idcode"></span>
+							
+							<b></b>
+							<div class="span" style="color:red">
+								
+							</div>
+							<div class="main2-r-t-bu1" id="btns">立即登录</div>
+							<div class="checkbox">
+								<input type="checkbox" id="checkbox"/><label for="checkbox">保存登录信息</label>
+							</div>
+							<p>
+								<a href="zhuce.html">注册</a>
+								<span>&nbsp;|&nbsp;</span>
+								<a href="#">忘记密码？</a>
+							</p>
+						</form>
+					</div>
+					
+					<div class="main2-r-b">
+						其他登录方式 ：
+						<button class="main2-r-b-bu"><img src="PUBLIC_IMG/images2/lo_09.jpg" /> QQ登录</button>
+						<button class="main2-r-b-bu"><img src="PUBLIC_IMG/images2/lo_11.jpg" /> 新浪微博</button>
+						<button class="main2-r-b-bu"><img src="PUBLIC_IMG/images2/lo_06.jpg" /> 迅雷登录</button>
+						<button class="main2-r-b-bu"><img src="PUBLIC_IMG/images2/lo_03.jpg" /> 支付宝登录</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	{include file="public/footer" /}
+		
+	</body>
+</html>

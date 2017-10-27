@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/style1.css"/>
+		<link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/toubu.css"/>
+		
+		<script src="PUBLIC_JS/jquery-1.12.3.js"></script>
+		<script src="PUBLIC_JS/lunbo.js"></script> 
+		<script src="PUBLIC_JS/toubu.js"></script>
+		<script src="PUBLIC_JS/style-1.0.0.js"></script>
+	</head>
+	<body>
+		<!--顶部置顶部分-->
+		<div id="top-sr">
+			<div class="top-s clear">
+				<img src="PUBLIC_IMG/images0/top-logo_03.jpg"/>
+				<form action="" method="">
+					<input type="text" class="input_c" placeholder="秋日穿搭发愁 唯有连衣裙解忧"/>
+					<input type="submit" value="搜索"/>
+				</form>
+				<p>没空去韩国？就来韩都衣舍！</p>
+			</div>
+		</div>
+
+		{include file="public/header" /}
+		
+		<!--轮播图部分-->
+		<div id="banner-wrapper">
+			<div class="banner">
+				<!--<ul class="banner-img">
+					<li><a href="#"><img src="PUBLIC_IMG/banner1.jpg"/></a></li>
+					<li><a href="#"><img src="PUBLIC_IMG/banner2.jpg"/></a></li>
+					<li><a href="#"><img src="PUBLIC_IMG/banner3.jpg"/></a></li>
+				</ul>-->
+				<ul class="banner-img">
+					<li style="background:url(PUBLIC_IMG/banner1.jpg) no-repeat"><a href="#"></a></li>
+					<li style="background:url(PUBLIC_IMG/banner3.jpg) no-repeat"><a href="#"></a></li>
+					<li style="background:url(PUBLIC_IMG/banner4.jpg) no-repeat"><a href="#"></a></li>
+				</ul>
+				<ul class="banner-dot clear">
+					<li class="active-ban">娜扎lookbook</li>
+					<li>全智贤新品</li>
+					<li>韩都衣舍X香奈儿</li>
+				</ul>
+			</div>
+		</div>
+	
+		<!--主体部分-->
+		<!--主体一部分红色警告-->
+		<div class="main1">
+			<i class="iconfont icon1">&#xe601;</i>
+			公告：警惕不法分子冒充韩都衣舍进行行骗！  查看详情
+			<i class="iconfont">&#xe600;</i>
+		</div>
+	
+		<!--主体二部分很多小logo部分-->
+		<div id="main2" class="clear">
+			<div class="main1-l">
+				<div class="main1-l-t">
+					<h3>互联网品牌生态运营集团</h3>
+					<p><i class="iconfont">&#xe63b;</i><a href="#">换一批</a></p>
+				</div>
+				<div class="main1-l-b">
+					<ul class="clear">
+					{volist name="cate2" id="val2" }
+						<li>
+							<b><img src="{$val2.brand_img}"/></b>
+							<span><img src="{$val2.brand_img}"/></span>
+						</li>
+					{/volist}
+						
+					</ul>
+				</div>
+			</div>
+			<div class="main1-r">
+				<div class="main1-r-t">
+					<ul class="clear">
+						<li class="main1-r-active">韩都动态</li>
+						<li>明星家族</li>
+						<li>媒体报道</li>
+						<li>无穷花开</li>
+					</ul>
+				</div>
+				<div class="main1-r-b">
+					<div class="main1-r-b1 clear" style="display: block;">
+						<dl>
+							<dt>
+								<a href="#"><img src="PUBLIC_IMG/main2_01.jpg"/></a>
+							</dt>
+							<dd>
+								<ul>
+									<li><i class="iconfont">&#xe603;</i><a href="#">韩都衣舍签约亚洲女神朴信惠</a></li>
+									<li><i class="iconfont">&#xe603;</i><a href="#">签约朴信惠，韩都衣舍将要做什么？</a></li>
+									<li><i class="iconfont">&#xe603;</i><a href="#">中韩首届电商大会召开 韩都衣舍受邀</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#"><img src="PUBLIC_IMG/main2_02.jpg"/></a>
+							</dt>
+							<dd>
+								<ul>
+									<li><i class="iconfont">&#xe603;</i><a href="#">韩都衣舍旗下男装AMH摘得双11淘品牌</a></li>
+									<li><i class="iconfont">&#xe603;</i><a href="#">韩都衣舍多级跳 淘品牌到孵化器</a></li>
+									<li><i class="iconfont">&#xe603;</i><a href="#">情人节，韩都老总竟然为数百人戴戒指？</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="main1-r-b1">
+						<dl>
+							<dt>
+								<a href="#"><img src="PUBLIC_IMG/main2_03.jpg"/></a>
+							</dt>
+							<dd>
+								<ul>
+									<li><span><a href="#">[详细内容]</a></span><i class="iconfont">&#xe603;</i><a href="#">签约三大韩星：韩都衣舍欲书写互联网品牌的中国时尚传奇</a></li>
+									<li><span><a href="#">[详细内容]</a></span><i class="iconfont">&#xe603;</i><a href="#">StarVC为韩都衣舍品牌背书</a></li>
+									<li><span><a href="#">[详细内容]</a></span><i class="iconfont">&#xe603;</i><a href="#">AMH星势力计划—韩国巨星池昌旭签约发布会</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="main1-r-b1 clear">
+						<dl>
+							<dt>
+								<a href="#"><img src="PUBLIC_IMG/main2_06.jpg"/></a>
+							</dt>
+							<dd>
+								<ul>
+									<li><i class="iconfont">&#xe603;</i><a href="#">韩都衣舍签约亚洲女神朴信惠</a></li>
+									<li><i class="iconfont">&#xe603;</i><a href="#">签约朴信惠，韩都衣舍将要做什么？</a></li>
+									<li><i class="iconfont">&#xe603;</i><a href="#">中韩首届电商大会召开 韩都衣舍受邀</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#"><img src="PUBLIC_IMG/main2_05.jpg"/></a>
+							</dt>
+							<dd>
+								<ul>
+									<li><i class="iconfont">&#xe603;</i><a href="#">韩都衣舍旗下男装AMH摘得双11淘品牌</a></li>
+									<li><i class="iconfont">&#xe603;</i><a href="#">韩都衣舍多级跳 淘品牌到孵化器</a></li>
+									<li><i class="iconfont">&#xe603;</i><a href="#">情人节，韩都老总竟然为数百人戴戒指？</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="main1-r-b1">
+						<dl>
+							<dt>
+								<a href="#"><img src="PUBLIC_IMG/main2_04.jpg"/></a>
+							</dt>
+							<dd>
+								<ul>
+									<li><span><a href="#">[详细内容]</a></span><i class="iconfont">&#xe603;</i><a href="#">签约三大韩星：韩都衣舍欲书写互联网品牌的中国时尚传奇</a></li>
+									<li><span><a href="#">[详细内容]</a></span><i class="iconfont">&#xe603;</i><a href="#">StarVC为韩都衣舍品牌背书</a></li>
+									<li><span><a href="#">[详细内容]</a></span><i class="iconfont">&#xe603;</i><a href="#">AMH星势力计划—韩国巨星池昌旭签约发布会</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		<!--主体三部分-->
+		<div class="main3 clear">
+			<a href="#" class="main3-l"><img data-original="PUBLIC_IMG/main3-1.png" class="lazy"/></a>
+			<a href="#" class="main3-r"><img data-original="PUBLIC_IMG/main3_03.jpg" class="lazy"/></a>
+		</div>
+		
+		
+		<!--主体四部分-->
+		<div id="main4">
+			<div class="main4-t clear">
+				<p><span>新品上市</span>New Arrival</p>
+				<ul class="main4-t-ul clear">
+					<li><a href="#" class="main4-t-a">韩风女装<img data-original="PUBLIC_IMG/main4-dot_03.jpg"/></a> | </li>
+					<li><a href="#">甜美少女<img data-original="PUBLIC_IMG/main4-dot_03.jpg" class="lazy"/></a> | </li>
+					<li><a href="#">迪葵纳<img data-original="PUBLIC_IMG/main4-dot_03.jpg" class="lazy"/></a> | </li>
+					<li><a href="#">韩风男装<img data-original="PUBLIC_IMG/main4-dot_03.jpg" class="lazy"/></a> | </li>
+					<li><a href="#">韩风童装<img data-original="PUBLIC_IMG/main4-dot_03.jpg" class="lazy"/></a> | </li>
+				</ul>
+			</div>
+			<div class="main4-b">
+				<div class="main4-1 clear">
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-1.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥152.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-2.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥168.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-3.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥102.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-4.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥186.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl style="margin-right: 0;">
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-5.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥122.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+				</div>
+			
+				<div class="main4-1 clear">
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-6.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥152.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-7.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥168.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-8.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥102.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-9.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥186.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl style="margin-right: 0;">
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-10.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥122.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="main4-1 clear">
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-11.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥152.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-12.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥168.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-13.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥102.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-14.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥186.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl style="margin-right: 0;">
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-15.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥122.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="main4-1 clear">
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-16.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥152.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-17.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥168.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-18.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥102.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-19.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥186.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl style="margin-right: 0;">
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-20.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥122.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="main4-1 clear">
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-21.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥152.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-22.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥168.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-23.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥102.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-24.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥186.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+					<dl style="margin-right: 0;">
+						<dt>
+							<a href="#"><img data-original="PUBLIC_IMG/main4-25.jpg" class="lazy"/></a>
+						</dt>
+						<dd>
+							<h3>￥122.00<span>￥278.00</span></h3>
+							<p>立即抢购</p>
+						</dd>
+					</dl>
+				</div>
+
+			</div>
+			
+		</div>
+	
+	
+		<!--主体五部分-->
+		<div id="main5">
+			<div class="main5-t clear">
+				<h3><span>HSTYLE</span>韩风时尚女装</h3>
+				<ul class="clear">
+					<li style="text-decoration: underline;">2017秋装新品</li>
+					<li>连衣裙</li>
+					<li>针织衫</li>
+					<li>卫衣</li>
+					<li>短外套</li>
+					<li>T恤</li>
+					<li>裤装</li>
+					<li>更多></li>
+				</ul>
+			</div>
+			
+			<div class="main5-b clear">
+				<div class="main5-b1">
+					<dl>
+						<dt><a href="#" title="连衣裙专区"><img data-original="PUBLIC_IMG/main5-2.jpg" class="lazy"/></a></dt>
+						<dd>
+							<a href="#">裙装</a>
+							<a href="#">连衣裙</a>
+							<a href="#">毛针织衫</a>
+							<a href="#">牛仔裤</a>
+							<a href="#">卫衣/绒衫</a>
+							<a href="#">短外套/休闲外套</a>
+							<a href="#">T恤</a>
+							<a href="#">休闲裤</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="main5-b2">
+					<a href="#" title="上新"><img data-original="PUBLIC_IMG/main5-1.jpg" class="lazy"/></a>
+				</div>
+				<div class="main5-b3">
+					<ul>
+						<li><a href="#" title="连衣裙专区"><img data-original="PUBLIC_IMG/main5-3.jpg" class="lazy"/></a></li>
+						<li style="margin-top: 10px;"><a href="#" title="T恤"><img data-original="PUBLIC_IMG/main5-4.jpg" class="lazy"/></a></li>
+					</ul>	
+				</div>
+				
+				<div class="main5-b4">
+					<div class="main5-b4-t">
+						<h3>热销排行榜</h3>
+					</div>
+					<div class="main5-b4-b">
+						<ul>
+							<li>
+								<h3 class="clear">
+									<span>1</span>
+									<b>2016秋装韩版百搭上衣</b>
+								</h3>
+								<dl class="clear">
+									<dt>
+										<a href="#"><img data-original="PUBLIC_IMG/main5-5.jpg" class="lazy"/></a>
+										<b><img data-original="PUBLIC_IMG/images0/main5-1.jpg" class="lazy"/></b>
+									</dt>
+									<dd>
+										<p>2016秋装韩版百搭上衣</p>
+										<h4>￥118.00</h4>
+										<h5>￥198.00</h5>
+										已售出<i>3256</i>笔
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="clear">
+									<span>2</span>
+									<b>2017韩版女秋装新款宽</b>
+								</h3>
+								<dl class="clear">
+									<dt>
+										<a href="#"><img data-original="PUBLIC_IMG/main5-6.jpg" class="lazy"/></a>
+										<b><img data-original="PUBLIC_IMG/images0/main5-2.jpg" class="lazy"/></b>
+									</dt>
+									<dd>
+										<p>2017韩版女秋装新款宽</p>
+										<h4>￥128.00</h4>
+										<h5>￥198.00</h5>
+										已售出<i>3256</i>笔
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="clear">
+									<span>3</span>
+									<b>2017韩版女秋装系带</b>
+								</h3>
+								<dl class="clear">
+									<dt>
+										<a href="#"><img data-original="PUBLIC_IMG/main5-7.jpg" class="lazy"/></a>
+										<b><img data-original="PUBLIC_IMG/images0/main5-3.jpg" class="lazy"/></b>
+									</dt>
+									<dd>
+										<p>2017韩版女秋装系带</p>
+										<h4>￥118.00</h4>
+										<h5>￥198.00</h5>
+										已售出<i>3256</i>笔
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="clear">
+									<span>4</span>
+									<b>2017韩版女装秋装新款</b>
+								</h3>
+								<dl class="clear">
+									<dt>
+										<a href="#"><img data-original="PUBLIC_IMG/main5-8.jpg" class="lazy"/></a>
+										<b><img data-original="PUBLIC_IMG/images0/main5-4.jpg" class="lazy"/></b>
+									</dt>
+									<dd>
+										<p>2017韩版女装秋装新款</p>
+										<h4>￥218.00</h4>
+										<h5>￥198.00</h5>
+										已售出<i>3256</i>笔
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="clear">
+									<span>5</span>
+									<b>2017韩版女装秋装新款</b>
+								</h3>
+								<dl class="clear">
+									<dt>
+										<a href="#"><img data-original="PUBLIC_IMG/main5-9.jpg" class="lazy"/></a>
+										<b><img data-original="PUBLIC_IMG/images0/main5-5.jpg" class="lazy"/></b>
+									</dt>
+									<dd>
+										<p>2017韩版女装秋装新款</p>
+										<h4>￥138.00</h4>
+										<h5>￥178.00</h5>
+										已售出<i>3256</i>笔
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="clear">
+									<span>6</span>
+									<b>2017韩版女秋装新哈伦</b>
+								</h3>
+								<dl class="clear">
+									<dt>
+										<a href="#"><img data-original="PUBLIC_IMG/main5-10.jpg" class="lazy"/></a>
+										<b><img data-original="PUBLIC_IMG/images0/main5-6.jpg" class="lazy"/></b>
+									</dt>
+									<dd>
+										<p>2017韩版女秋装新哈伦</p>
+										<h4>￥138.00</h4>
+										<h5>￥158.00</h5>
+										已售出<i>3256</i>笔
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="clear">
+									<span>7</span>
+									<b>2016韩版女装秋装新修</b>
+								</h3>
+								<dl class="clear">
+									<dt>
+										<a href="#"><img data-original="PUBLIC_IMG/main5-11.jpg" class="lazy"/></a>
+										<b><img data-original="PUBLIC_IMG/images0/main5-7.jpg" class="lazy"/></b>
+									</dt>
+									<dd>
+										<p>2016韩版女装秋装新修</p>
+										<h4>￥248.00</h4>
+										<h5>￥309.00</h5>
+										已售出<i>3256</i>笔
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<h3 class="clear">
+									<span>8</span>
+									<b>2016秋装新打底衫上衣</b>
+								</h3>
+								<dl class="clear">
+									<dt>
+										<a href="#"><img data-original="PUBLIC_IMG/main5-10.jpg" class="lazy"/></a>
+										<b><img data-original="PUBLIC_IMG/images0/main5-8.jpg" class="lazy"/></b>
+									</dt>
+									<dd>
+										<p>2016秋装新打底衫上衣</p>
+										<h4>￥18.00</h4>
+										<h5>￥108.00</h5>
+										已售出<i>3256</i>笔
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--主体六部分-->
+		<div class="main6 clear">
+			<dl>
+				<dt>
+					<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main6-1.jpg" class="lazy"/></a>
+				</dt>
+				<dd>
+					<h3>￥106.00<span>￥208.00</span></h3>
+					<p>立即抢购</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main6-2.jpg" class="lazy"/></a>
+				</dt>
+				<dd>
+					<h3>￥106.00<span>￥208.00</span></h3>
+					<p>立即抢购</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main6-3.jpg" class="lazy"/></a>
+				</dt>
+				<dd>
+					<h3>￥106.00<span>￥208.00</span></h3>
+					<p>立即抢购</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main6-4.jpg" class="lazy"/></a>
+				</dt>
+				<dd>
+					<h3>￥106.00<span>￥208.00</span></h3>
+					<p>立即抢购</p>
+				</dd>
+			</dl>
+			<dl style="margin-right: 0;">
+				<dt>
+					<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main6-5.jpg" class="lazy"/></a>
+				</dt>
+				<dd>
+					<h3>￥106.00<span>￥208.00</span></h3>
+					<p>立即抢购</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main6-6.jpg" class="lazy"/></a>
+				</dt>
+				<dd>
+					<h3>￥106.00<span>￥208.00</span></h3>
+					<p>立即抢购</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main6-7.jpg" class="lazy"/></a>
+				</dt>
+				<dd>
+					<h3>￥106.00<span>￥208.00</span></h3>
+					<p>立即抢购</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main6-8.jpg" class="lazy"/></a>
+				</dt>
+				<dd>
+					<h3>￥106.00<span>￥208.00</span></h3>
+					<p>立即抢购</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main6-9.jpg" class="lazy"/></a>
+				</dt>
+				<dd>
+					<h3>￥106.00<span>￥208.00</span></h3>
+					<p>立即抢购</p>
+				</dd>
+			</dl>
+			<dl style="margin-right: 0;">
+				<dt>
+					<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main6-10.jpg" class="lazy"/></a>
+				</dt>
+				<dd>
+					<h3>￥106.00<span>￥208.00</span></h3>
+					<p>立即抢购</p>
+				</dd>
+			</dl>
+		</div>
+	
+	
+		<!--主体七部分-->
+		<div id="main7">
+			<div class="main7-t clear">
+				<h3><span>迪葵纳</span>韩风时尚妈妈装</h3>
+				<ul class="clear">
+					<li style="color:#e53333">2017秋装新品</li>
+					<li>T恤</li>
+					<li>毛针织衫</li>
+					<li>套装</li>
+					<li>裙装</li>
+					<li>裤装</li>
+					<li>更多></li>
+				</ul>
+			</div>
+			
+			<div class="main7-b clear">
+				<div class="main7-b1">
+					<dl>
+						<dt><a href="#" title="连衣裙专区"><img data-original="PUBLIC_IMG/main7-7.jpg" class="lazy"/></a></dt>
+						<dd>
+							<a href="#">T恤</a>
+							<a href="#">衬衫</a>
+							<a href="#">裤装</a>
+							<a href="#">裙装</a>
+							<a href="#">短外套</a>
+							<a href="#">毛针织衫</a>
+							<a href="#">套装</a>
+							<a href="#">风衣</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="main7-b2">
+					<a href="#" title="dequanna"><img data-original="PUBLIC_IMG/main7-1.jpg" class="lazy"/></a>
+				</div>
+				<div class="main7-b3">
+					<a href="#" title="新款T恤"><img data-original="PUBLIC_IMG/main7-8.jpg" class="lazy"/></a>
+					<a href="#" title="衬衫"><img data-original="PUBLIC_IMG/main7-9.jpg" class="lazy"/></a>		
+				</div>
+			</div>
+			
+			<div class="main7-img clear">
+				<dl>
+					<dt>
+						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main7-2.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥136.00<span>￥238.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main7-3.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥156.00<span>￥228.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main7-4.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥156.00<span>￥213.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main7-5.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥96.00<span>￥138.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl style="margin-right: 0;">
+					<dt>
+						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main7-6.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥266.00<span>￥368.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	
+	
+		<!--主体八部分-->
+		<div id="main8">
+			<div class="main8-t clear">
+				<h3><span>娜娜日记</span>韩风甜美少女装</h3>
+				<ul class="clear">
+					<li>衬衫</li>
+					<li>套装</li>
+					<li>裤装</li>
+					<li>裙装</li>
+					<li style="color:#e53333">T恤</li>
+					<li>更多></li>
+				</ul>
+			</div>
+			
+			<div class="main8-b clear">
+				<div class="main8-b1">
+					<dl>
+						<dt><a href="#" title="连衣裙专区"><img data-original="PUBLIC_IMG/main8-1.jpg" class="lazy"/></a></dt>
+						<dd>
+							<a href="#">裙装</a>
+							<a href="#">裤装</a>
+							<a href="#">短外套</a>
+							<a href="#">T恤</a>
+							<a href="#">卫衣/绒衫</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="main8-b2">
+					<a href="#" title="dequanna"><img data-original="PUBLIC_IMG/main8-2.jpg" class="lazy"/></a>
+				</div>
+				<div class="main8-b3">
+					<a href="#" title="新款T恤" style="margin-top: 0;"><img data-original="PUBLIC_IMG/main8_05.jpg" class="lazy"/></a>
+					<a href="#" title="衬衫"><img data-original="PUBLIC_IMG/main8-3.jpg" class="lazy"/></a>	
+					<a href="#" title="美美裙装"><img data-original="PUBLIC_IMG/main8-4.jpg" class="lazy"/></a>	
+				</div>
+			</div>
+			
+			<div class="main8-img clear">
+				<dl>
+					<dt>
+						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main8-5.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥136.00<span>￥208.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main8-6.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥45.00<span>￥108.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main8-7.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥106.00<span>￥208.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main8-8.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥87.00<span>￥148.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl style="margin-right: 0;">
+					<dt>
+						<a href="#" title="韩都衣舍2017韩版女装秋装新款宽松字母印花短款T恤AA8247打0824"><img data-original="PUBLIC_IMG/main8-9.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥236.00<span>￥328.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	
+		<!--主体九部分-->
+		<div id="main9">
+			<div class="main9-t clear">
+				<h3><span>米妮·哈鲁</span>韩风时尚童装</h3>
+				<ul class="clear">
+					<li>婴幼童</li>
+					<li>套装</li>
+					<li>衬衫</li>
+					<li>裤装</li>
+					<li>裙装</li>
+					<li>卫衣/绒衫</li>
+					<li>T恤</li>
+					<li>更多></li>
+				</ul>
+			</div>
+			
+			<div class="main9-b clear">
+				<div class="main9-b1">
+					<dl>
+						<dt><a href="#" title="新品六折发售"><img data-original="PUBLIC_IMG/main9-1.jpg" class="lazy"/></a></dt>
+						<dd>
+							<a href="#">卫衣/绒衫</a>
+							<a href="#">牛仔裤</a>
+							<a href="#">套装</a>
+							<a href="#">T恤</a>
+							<a href="#">外套/夹克/大衣</a>
+							<a href="#">连衣裙</a>
+							<a href="#">毛衣/针织衫</a>
+							<a href="#">打底裤</a>
+							<a href="#">T恤</a>
+							<a href="#">半身裙</a>
+							<a href="#">休闲裤</a>
+							<a href="#">马甲</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="main9-b2">
+					<a href="#" title="Minizaru童装"><img data-original="PUBLIC_IMG/main9-4.jpg" class="lazy"/></a>
+				</div>
+				<div class="main9-b3">					
+					<a href="#" title="精选童装" style="margin-top: 0;"><img data-original="PUBLIC_IMG/main9-3.jpg" class="lazy"/></a>	
+					<a href="#" title="热卖裤装"><img data-original="PUBLIC_IMG/main9-2.jpg" class="lazy"/></a>	
+				</div>
+			</div>
+			
+			<div class="main9-img clear">
+				<dl>
+					<dt>
+						<a href="#" title="米妮哈鲁童装2017秋女童韩版儿童裤子中大童牛仔背带裤ZR8206泷"><img data-original="PUBLIC_IMG/main9-5.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥102.00<span>￥148.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="米妮哈鲁童装2017秋女童韩版儿童裤子中大童牛仔背带裤ZR8206泷"><img data-original="PUBLIC_IMG/main9-6.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥221.00<span>￥256.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="米妮哈鲁童装2017秋女童韩版儿童裤子中大童牛仔背带裤ZR8206泷"><img data-original="PUBLIC_IMG/main9-7.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥143.00<span>￥342.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="米妮哈鲁童装2017秋女童韩版儿童裤子中大童牛仔背带裤ZR8206泷"><img data-original="PUBLIC_IMG/main9-8.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥146.00<span>￥238.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl style="margin-right: 0;">
+					<dt>
+						<a href="#" title="米妮哈鲁童装2017秋女童韩版儿童裤子中大童牛仔背带裤ZR8206泷"><img data-original="PUBLIC_IMG/main9-9.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥136.00<span>￥208.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	
+		<!--主体十部分-->
+		<div id="main10">
+			<div class="main10-t clear">
+				<h3><span>尼班诗</span>欧美时尚女装</h3>
+				<ul class="clear">
+					<li>蕾丝雪纺</li>
+					<li>连衣裙</li>
+					<li>衬衫</li>
+					<li>裤装</li>
+					<li>连衣裙</li>
+					<li>T恤</li>
+					<li>更多></li>
+				</ul>
+			</div>
+			
+			<div class="main10-b clear">
+				<div class="main10-b1">
+					<dl>
+						<dt><a href="#" title="出游正当季 新品起航"><img data-original="PUBLIC_IMG/main10_03.jpg" class="lazy"/></a></dt>
+						<dd>
+							<a href="#">卫衣/绒衫</a>
+							<a href="#">毛针织衫</a>
+							<a href="#">连衣裙</a>
+							<a href="#">T恤</a>
+							<a href="#">衬衫</a>
+							<a href="#">蕾丝衫/雪纺衫</a>
+							<a href="#">休闲外套</a>
+							<a href="#">休闲裤</a>
+							<a href="#">马甲</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="main10-b2">
+					<a href="#" title="niBBuns女装"><img data-original="PUBLIC_IMG/main10-1.jpg" class="lazy"/></a>
+				</div>
+				<div class="main10-b3">					
+					<a href="#" title="热卖裤装"><img data-original="PUBLIC_IMG/main10_05.jpg" class="lazy"/></a>	
+				</div>
+			</div>
+			
+			<div class="main10-img clear">
+				<dl>
+					<dt>
+						<a href="#" title="尼班诗欧美2017秋装新款女装ulzzang宽松绑带套头针织衫毛衣女萍"><img data-original="PUBLIC_IMG/main10-2.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥136.00<span>￥208.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="尼班诗欧美2017秋装新款女装ulzzang宽松绑带套头针织衫毛衣女萍"><img data-original="PUBLIC_IMG/main10-3.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥236.00<span>￥408.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="尼班诗欧美2017秋装新款女装ulzzang宽松绑带套头针织衫毛衣女萍"><img data-original="PUBLIC_IMG/main10-4.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥89.00<span>￥138.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#" title="尼班诗欧美2017秋装新款女装ulzzang宽松绑带套头针织衫毛衣女萍"><img data-original="PUBLIC_IMG/main10-5.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥124.00<span>￥298.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+				<dl style="margin-right: 0;">
+					<dt>
+						<a href="#" title="尼班诗欧美2017秋装新款女装ulzzang宽松绑带套头针织衫毛衣女萍"><img data-original="PUBLIC_IMG/main10-6.jpg" class="lazy"/></a>
+					</dt>
+					<dd>
+						<h3>￥116.00<span>￥218.00</span></h3>
+						<p>立即抢购</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	
+		<!--主体十一部分-->
+		<div class="main11">
+			<a href="#"><img data-original="PUBLIC_IMG/main-bg.jpg" class="lazy"/></a>
+		</div>
+		
+		
+		<!--尾部导航1-->
+		<div id="foot1">
+			<div class="foot1-t clear">
+				<h3>韩都资讯</h3>
+				<p>更多></p>
+			</div>
+			
+			<div class="foot1-b clear">
+				<div class="foot1-b1">
+					<a href="#"><img data-original="PUBLIC_IMG/images0/foot1-1.jpg" class="lazy"/></a>
+				</div>
+				
+				<div class="foot1-b2">
+					<h3>时尚最新鲜</h3>
+					<h4>在韩国首创时尚大赛，韩都衣舍又创···</h4>
+					<p>8月12日，韩都衣舍2016韩国时尚设计师大赛成功举办，在到场的200多位重量级嘉宾</p>
+					<h4>韩都衣舍跨界玩转模特大赛牵手瑞丽···</h4>
+					<p>在继电商节618狂欢、韩国直播和十周年庆典后，韩都衣舍出现在了瑞丽模特大赛的赛</p>
+					<ul>
+						<li><i class="iconfont">&#xe603;</i>韩都衣舍携手J-ONE PARTNERS，演绎中</li>
+						<li><i class="iconfont">&#xe603;</i>韩都衣舍搭手韩国户外第一品牌 打通电</li>
+					</ul>
+				</div>
+				<div class="foot1-b3">
+					<a href="#"><img data-original="PUBLIC_IMG/images0/foot1-2.jpg" class="lazy"/></a>
+				</div>
+				
+				<div class="foot1-b4">
+					<h5>关注我们</h5>
+					<dl class="clear">
+							<dt><img data-original="PUBLIC_IMG/images0/foot_03.jpg" class="lazy"/></dt>
+							<dd>
+								<h3>来微信</h3>
+								<h4>让好衣服主动找到你</h4>
+								<span>新品上新  促销活动  物流跟踪</span> 随时掌握一手信息...
+							</dd>
+					</dl>
+					<div class="foot1-b4-b">
+						<h3>不想错失活动信息、时尚推荐?</h3>
+						<h4>马上订阅 <span>韩都邮件！</span></h4>
+						<h5>现在就留下您的邮件地址：</h5>
+						<form action="">
+							<input type="text" />
+							<p>马上订阅<i class="iconfont">&#xe605;</i></p>
+						</form>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		{include file="public/footer" /}
+
+		<!--尾部结束部分-->
+		<div id="foot6">
+			<div class="foot6-t">
+				<span>友情链接 : </span>
+			</div>
+			<div class="foot6-b">
+				<ul class="foot6-b-ul clear">
+					<li><a href="#">四季青服装网</a></li>
+					<li><a href="#">优惠劵</a></li>
+					<li><a href="#">虎扑识货</a></li>
+					<li><a href="#">手表品牌大全</a></li>
+					<li><a href="#">服装批发网</a></li>
+					<li><a href="#">网上购物</a></li>
+					<li><a href="#">淘牛品</a></li>
+					<li><a href="#">享优惠</a></li>
+					<li><a href="#">豪华旅游</a></li>
+					<li><a href="#">女装批发网</a></li>
+					<li><a href="#">照片书</a></li>
+					<li><a href="#">优品惠</a></li>
+					<li><a href="#">广州分类信息</a></li>
+					<li><a href="#">四季青服装网</a></li>
+					<li><a href="#">优惠劵</a></li>
+					<li><a href="#">虎扑识货</a></li>
+					<li><a href="#">手表品牌大全</a></li>
+					<li><a href="#">服装批发网</a></li>
+					<li><a href="#">网上购物</a></li>
+					<li><a href="#">淘牛品</a></li>
+					<li><a href="#">享优惠</a></li>
+					<li><a href="#">豪华旅游</a></li>
+					<li><a href="#">女装批发网</a></li>
+					<li><a href="#">照片书</a></li>
+					<li><a href="#">优品惠</a></li>
+					<li><a href="#">广州分类信息</a></li>
+					<li><a href="#">虎扑识货</a></li>
+					<li><a href="#">手表品牌大全</a></li>
+					<li><a href="#">服装批发网</a></li>
+					<li><a href="#">网上购物</a></li>
+					<li><a href="#">淘牛品</a></li>
+					<li><a href="#">享优惠</a></li>
+					<li><a href="#">豪华旅游</a></li>
+					<li><a href="#">女装批发网</a></li>
+					<li><a href="#">照片书</a></li>
+					<li><a href="#">优品惠</a></li>
+					<li><a href="#">广州分类信息</a></li>
+				</ul>
+			</div>
+		</div>
+
+	<script type="text/javascript" src="PUBLIC_JS/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="PUBLIC_JS/jquery.lazyload.js"></script>
+	
+	</body>
+</html>

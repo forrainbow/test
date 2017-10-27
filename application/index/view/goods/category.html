@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <title>HSTYLE韩都衣舍男装_韩都衣舍_韩都商城</title> 
+  <meta name="Keywords" content="" /> 
+  <meta name="Description" content="" /> 
+  <!-- <link rel="stylesheet" type="text/css" href="PUBLIC_INDEX/Css/handu_base.css" />  -->
+  <link rel="stylesheet" type="text/css" href="PUBLIC_INDEX/Css/handu_search.css" /> 
+  <link rel="stylesheet" type="text/css" href="PUBLIC_INDEX/Css/handu_list.css" /> 
+  <script type="text/javascript" src="PUBLIC_INDEX/Scripts/goods_0618.js"></script> 
+  <style>
+ em.price_11{background:url("PUBLIC_INDEX/Images/jb03.png") no-repeat 0 0;width: 78px;height:67px;position:absolute;right:0px;bottom:-29px;text-align:center;font-size: 18px;font-weight: bold;color:#fff;font-family: 'Arial';z-index:300; padding-top:30px; line-height: 45px;}
+</style> 
+
+
+    <link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/toubu.css"/>
+    <link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/jquery.idcode.css"/>
+    <link rel="stylesheet" type="text/css" href="PUBLIC_SASS/css/login.css"/>
+
+    
+    <script src="PUBLIC_JS/jquery-1.12.3.js"></script>
+    <script src="PUBLIC_JS/common.js"></script>
+    <script src="PUBLIC_JS/jquery.idcode.js"></script>  
+    <script src="PUBLIC_JS/cookie.js"></script> 
+    <script src="PUBLIC_JS/login.js"></script>
+
+
+ </head> 
+ <body> 
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /> 
+  
+
+  <script>
+ //鼠标滑过弹出层
+function dhceng(obj, sType) 
+{ 
+  var oDiv = document.getElementById(obj); 
+  if (sType == 'show') {oDiv.style.display = 'block';} 
+  if (sType == 'hide') {oDiv.style.display = 'none';}  
+} 
+</script> 
+  <script type="text/javascript" src="PUBLIC_INDEX/Scripts/jquery-1.9.1.min.js"></script> 
+  <script type="text/javascript" src="PUBLIC_INDEX/Scripts/jquery-migrate-1.1.0.js"></script> 
+ 
+  
+     <script type="text/javascript">
+        $('#hd_search .hdin_not input').bind({
+          'focus':function(){
+            $(this).siblings('label').hide();
+          },
+          'blur':function(){
+            if($(this).val()==''){
+              $(this).siblings('label').show();
+            }
+          }
+        });
+    $(function(){
+        $(".head_btnleft").click(function(){
+          $(".header_ewm").addClass("displaynone");
+          
+        });
+        
+      })
+    
+      </script> 
+     
+
+
+  
+  <script>
+    $(function(){
+    $(".yMenuLCon").hide();
+    var s = window.location.href;
+    if(s.toLowerCase()=="http://www.handu.com" || s.toLowerCase()=="http://www.handu.com/" ||  s.toLowerCase()=="http://www.handu.com/index.html"){
+      $(".pullDList").show();
+      $(".yMenuLCon").show();
+      
+      }else{
+      $(".pullD").hover(function(){
+      $(".pullDList").show();
+      
+      },function(){
+      $(".pullDList").hide(); 
+        })
+      }
+    })
+    </script>      
+  
+  {include file="public/header" /}
+    <!-- 主体部分 -->
+  <div class="wrap"> 
+   <div id="cate_left"> 
+    <div class="cate_tree"> 
+
+  <!-- 遍历左侧分类开始 -->
+  {volist name="cate2" id="val1"}
+     <dl> 
+      <dt>
+       <a href="">{$val1.cate_name}</a>
+       <i></i>
+      </dt>
+      {volist name="left1" id="val2"}
+      <dd class=""> 
+          <h3><a href="" title="{$val2.name}">{$val2.name}</a></h3> 
+          <ul> 
+          {volist name="left2" id="val3"}
+            {if ($val1.cate_id == $val3.brand_id && $val2.clothes_id == $val3.pid)}
+              <li> <a href="/index/goods/category/brand_id/{$val1.cate_id}/clothes_id/{$val3.clothes_id}" title="{$val3.name}" class="goods_cate">{$val3.name}</a><span>({$val3.goods_num})</span> </li>
+            {/if}
+          {/volist} 
+          </ul> 
+      </dd> 
+      {/volist}
+     </dl> 
+  {/volist}
+  <!-- 遍历左侧分类结束 -->
+
+  <!-- ajax条件遍历商品开始 -->
+  <script type="text/javascript">
+      $('.goods_cate').click(function (){
+          var brand_id = $('.goods_cate').title();
+          console.log(brand_id);
+          var url = '/index/goods/category';
+          //$.post(url,{})
+      })
+  </script>
+  <!-- ajax条件遍历商品结束 -->
+
+
+    </div>
+    <div class="category_top10"> 
+     <div class="category_tree_title category_paihang_title">
+      人气热卖
+     </div> 
+     <ul class="category_paihang" style="padding-bottom:10px;"> 
+      <li> 
+       <div class="paihang_pic"> 
+        <a href="goods-1052228.html" title="韩都衣舍2016秋装新打底衫上衣女长袖潮T恤HH6202.妠" target="_blank"><img src="PUBLIC_INDEX/Picture/1477632277549701332.jpg" alt="韩都衣舍2016秋装新打底衫上衣女长袖潮T恤HH6202.妠" width="162" border="0" /></a> 
+       </div> 
+       <div class="middle">
+        <span class="price">￥68</span> 
+        <span class="sell_count">销量：<em>1486</em></span>
+       </div> 
+       <div class="paihang_nr"> 
+        <a href="goods-1052228.html" title="韩都衣舍2016秋装新打底衫上衣女长袖潮T恤HH6202.妠" target="_blank">韩都衣舍2016秋装新打底衫上衣女长袖潮T恤HH6202.妠</a> 
+       </div> </li> 
+      <li> 
+       <div class="paihang_pic"> 
+        <a href="goods-1052721.html" title="韩都衣舍2016秋装新款韩版女装收腰显瘦潮A型长袖连衣裙RW6211瑒" target="_blank"><img src="PUBLIC_INDEX/Picture/1052721_thumb_g_1479460499698.jpg" alt="韩都衣舍2016秋装新款韩版女装收腰显瘦潮A型长袖连衣裙RW6211瑒" width="162" border="0" /></a> 
+       </div> 
+       <div class="middle">
+        <span class="price">￥126</span> 
+        <span class="sell_count">销量：<em>904</em></span>
+       </div> 
+       <div class="paihang_nr"> 
+        <a href="goods-1052721.html" title="韩都衣舍2016秋装新款韩版女装收腰显瘦潮A型长袖连衣裙RW6211瑒" target="_blank">韩都衣舍2016秋装新款韩版女装收腰显瘦潮A型长袖连衣裙RW6211瑒</a> 
+       </div> </li> 
+      <li> 
+       <div class="paihang_pic"> 
+        <a href="goods-1052010.html" title="韩都衣舍2016韩版女装冬装新款宽松纯色减龄背带连衣裙CQ6027.莀" target="_blank"><img src="PUBLIC_INDEX/Picture/1476440671526115624.jpg" alt="韩都衣舍2016韩版女装冬装新款宽松纯色减龄背带连衣裙CQ6027.莀" width="162" border="0" /></a> 
+       </div> 
+       <div class="middle">
+        <span class="price">￥96</span> 
+        <span class="sell_count">销量：<em>4</em></span>
+       </div> 
+       <div class="paihang_nr"> 
+        <a href="goods-1052010.html" title="韩都衣舍2016韩版女装冬装新款宽松纯色减龄背带连衣裙CQ6027.莀" target="_blank">韩都衣舍2016韩版女装冬装新款宽松纯色减龄背带连衣裙CQ6027.莀</a> 
+       </div> </li> 
+     </ul> 
+     <div style="height:10px; "></div> 
+    </div>
+   </div> 
+   <div id="cate_right"> 
+    <div class="cate_gg"> 
+    </div> 
+    <div class="handu_crumb">
+      您所在的位置 
+     <code>&gt;</code> 
+     <a href="/index">久亿集团</a> 
+     <code>&gt;</code> 
+     <a href="">{$brand_name}</a>
+     <code>&gt;</code> 
+     <a href="">{$clothes_name}</a>
+    </div> 
+    <form id="c_page_form" action="category.php" method="GET"> 
+     <input type="hidden" name="category" value="10875" /> 
+     <input type="hidden" name="sort" value="sell_count" /> 
+     <input type="hidden" name="order" value="desc" /> 
+     <div id="sort_bar"> 
+      <ul class="sort_set"> 
+       <li class=" ">
+       <a title="恢复默认排序" href="/index/goods/category/brand_id/{$brand_id}/clothes_id/{$clothes_id}">默认排序</a> 
+       </li> 
+       <li class="desc">
+       <a title="点击后降序" href="/index/goods/category/brand_id/{$brand_id}/clothes_id/{$clothes_id}/order/create_time/desc/desc">上架时间<i></i></a>
+       </li> 
+       <li class=" asc">
+       <a title="点击后升序" href="/index/goods/category/brand_id/{$brand_id}/clothes_id/{$clothes_id}/order/member_price/desc/asc">价格<i></i></a> 
+       </li> 
+       <li class="selected desc">
+       <a title="点击后升序" href="/index/goods/category/brand_id/{$brand_id}/clothes_id/{$clothes_id}/order/month_sale/desc/desc">销量<i></i></a> 
+       </li> 
+      </ul> 
+      <div class="priceRange" id="bar-range"> 
+       <div class="pr_box"> 
+        <span class="input_notice"><label>￥</label><input type="text" class="rangeNum range-min" name="price_min" value="" autocomplete="off" /></span> 
+        <code>-</code> 
+        <span class="input_notice"><label>￥</label><input type="text" class="rangeNum range-max" name="price_max" value="" autocomplete="off" /></span> 
+       </div> 
+       <div class="pr_btn"> 
+        <button type="button" class="btn-clear"> </button> 
+        <button type="submit" class="btn-yes"> </button> 
+       </div> 
+      </div> 
+      <div class="search_check"> 
+       <input type="checkbox" name="discount" class="hide" value="1" style="display: none;"/> 
+       <a class="check  " href="javascript:void(0)"></a>
+       <span>折扣商品</span> 
+      </div> 
+      <div class="search_check"> 
+       <input type="checkbox" name="ship" class="hide" value="1" style="display: none;"/> 
+       <a class="check  " href="javascript:void(0)"></a>
+       <span>包邮</span> 
+      </div> 
+      <div class="page_set"> 
+       <span>总计282个商品</span>&nbsp;&nbsp;&nbsp;&nbsp; 
+       <span>1 /8</span> &nbsp;&nbsp; 
+       <span class="arr">&lt;</span> 
+       <a class="arr" href="category-10875-b0-min0-max0-attr0-2-sell_count-desc.html"><span>&gt;</span></a> 
+      </div> 
+     </div> 
+    </form> 
+    <div class="productGrid"> 
+     <div class="grid_wrap"> 
+
+<!-- 遍历商品开始  -->
+{volist name="goods" id="val"}
+      <div class="product "> 
+       <div class="product-iWrap"> 
+        <div class="productImg-wrap"> 
+         <a href="/index/goods/details/goods_id/{$val.goods_id}/brand_id/{$brand_id}/clothes_id/{$clothes_id}" title="{$val.goods_introduce}" class="productImg" target="_blank"> <img src="{$val.img_url}" alt="{$val.goods_introduce}" /> </a> 
+         <script>
+                 //   getGood_price("AF6039");
+                    </script> 
+        </div> 
+        <div class="productThumb clearfix"> 
+         <div class="proThumb-wrap"> 
+          <p class="ks-switchable-content"><b class="proThumb-img "><img src="{$val.img_url}" title="主图" alt="{$val.goods_introduce}" /><i></i></b></p> 
+         </div> 
+        </div> 
+        <p class="productPrice"> <em title="￥{$val.member_price}"><b>&yen;</b>{$val.member_price}</em> 
+         <del title="市场价 {$val.market_price}">
+          &yen;{$val.market_price}
+         </del> 
+         </p> 
+        <p class="productTitle"> <a href="/index/goods/details/goods_id/{$val.goods_id}/brand_id/{$brand_id}/clothes_id/{$clothes_id}" target="_blank" title="{$val.goods_introduce}">{$val.goods_introduce}</a> 
+        </p> 
+        <p class="productStatus"> <span><em>{$val.month_sale}</em><br />月销量</span> <span class="r"><a href="/index/goods/details/goods_id/{$val.goods_id}/brand_id/{$brand_id}/clothes_id/{$clothes_id}" target="_blank">{$val.appraise}</a><br />累计评价</span> 
+        </p> 
+       </div> 
+      </div> 
+{/volist}
+<!-- 遍历商品结束  -->
+
+
+ 
+      <br class="clear" /> 
+     </div> 
+     <div class="search_page"> 
+      <strong class="current">1</strong> 
+      <a class="page" href="">2</a> 
+      <a class="page" href="">3</a> 
+      <a class="page" href="">4</a> 
+      <a class="page" href="">5</a> 
+      <a class="page" href="">6</a> 
+      <a class="page">...</a>
+      <a class="page" href="">8</a>
+      <a class="page next" href="">下一页</a> 
+      <span>共8页 </span>&nbsp; 
+     </div>
+    </div> 
+   </div> 
+  </div> 
+  <!-- 主体部分结束 -->
+  {include file="public/footer" /}
+
+  <script type="text/javascript">
+
+//左侧分类折叠
+$('.cate_tree dt').click(function(){
+    $(this).parent().toggleClass('on').siblings().removeClass('on');
+});
+$('.cate_tree h3').click(function(){
+    $(this).parent().toggleClass('on').siblings().removeClass('on');
+});
+$('.cate_tree .on').parents('dd,dl').addClass('on');
+//商品图片切换
+$('.productThumb img ').hover(function(){
+    $(this).parents('.product-iWrap').find('.productImg-wrap img').attr('src',$(this).attr('thumb'));
+    
+});
+ 
+$('.search_check .check').click(function(){
+    if($(this).hasClass('checked')){
+        $(this).removeClass('checked');    
+        $(this).prev().attr('checked',false);
+    }else{
+        $(this).addClass('checked');
+        $(this).prev().attr('checked',true);
+    }
+    $('#c_page_form')[0].submit();
+});
+$('.input_notice input').bind({
+        'focus':function(){
+            $(this).siblings('label').hide();
+        },
+        'blur':function(){
+            if($(this).val()==''){
+                $(this).siblings('label').show();
+            }
+        }
+});
+//处理价格范围事件
+var _timer_pr=null;
+$('#bar-range input').bind({
+    'focus':function(){
+       clearTimeout(_timer_pr);
+       $('#bar-range').addClass('priceRange_on');
+    },
+    'blur':function(){
+       _timer_pr=setTimeout(function(){ 
+            $('#bar-range').removeClass('priceRange_on')
+       },300);
+    }
+});
+$('.pr_btn .btn-clear').click(function(){
+    clearTimeout(_timer_pr);
+    $('#bar-range input').val('').eq(0).focus();
+    //$('#bar-range').addClass('priceRange_on');
+});
+    
+</script> 
+  
+  <script type="text/javascript">
+/*
+ *  以后可以替换 login_ajax.lbi 中的isLogin
+ * @param callback 若是已登录状态或点登录按钮后的回调函数
+ * @param 点击登录按钮后的回调函数
+ * 依赖： js/dialog/dialog.js" id="dialog_js" 
+ * 此函数定义在footer中，所有页面引入dialog.js后均可直接使用，callback在各自页面中自行定义。
+ **/
+function _is_login (callback){
+    if(typeof(callback)=='undefined'){
+         callback=function(){};
+    }
+    var login_callbackname='login_callback_'+parseInt(Math.random()*1000000000000); 
+    this[login_callbackname]=function(d){
+        DialogManager.close('L_ajax_login');
+        callback(d);
+    }
+  $.get("user.php?act=isLogin",{rid:Math.random()},function(data){
+    if(parseInt(data.user_id) > 0 && data.username){
+             callback(data);
+    }else{
+      //显示登录框
+            var url='/user.php?act=act_login_ajax&login_callback='+login_callbackname;
+            ajax_form(url,'L_ajax_login', 450 ,'登录');
+    }
+  },'JSON');
+}
+ 
+</script> 
+  <script type="text/javascript">
+$(function() {
+  //加载页头用户登陆状态
+    $('#HD_MEMBERZONE').load('/online.php?act=get_user_status&ts=' + (new Date().getTime()));
+    
+    //添加收藏夹
+    $('#nav_addFavorite a').click(function(){
+        var sURL='http://www.handu.com';
+        var sTitle='韩都衣舍HSTYLE';
+        try {
+            window.external.addFavorite(sURL, sTitle);
+        }
+        catch (e) {
+            try {
+                window.sidebar.addPanel(sTitle, sURL, "");
+            }
+            catch (e) {
+                alert("您可以尝试通过快捷键 Ctrl + D 加入到收藏夹~");
+            }
+        }
+    
+    });
+   
+});
+</script> 
+  <div class="float_box"> 
+   <!--无线二维码<div class="float_app"></div>--> 
+   <a href="http://www.handu.com/flow.php?step=cart" target="_blank" class="a1" onclick="_czc.push(['_trackEvent', '悬浮', '购物车']);"></a> 
+   <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzkzODE4ODAzNF80MzI3MjBfNDAwODA2Nzc3N18yXw" target="_blank" class="a2" onclick="_czc.push(['_trackEvent', '悬浮', '在线客服']);"></a> 
+   <a class="a3" onclick="_czc.push(['_trackEvent', '悬浮', '在线反馈']);"></a> 
+   <a href="javascript:void(0);" class="a4 backTop" onclick="_czc.push(['_trackEvent', '悬浮', '返回顶部']);"></a> 
+  </div> 
+  <script language="javascript" type="text/javascript">
+$(window).scroll(function(){
+      var t = document.documentElement.scrollTop||document.body.scrollTop;
+      if(t>450){
+    $(".float_box").fadeIn();
+      }
+      else{
+     $(".float_box").hide();
+      }
+})
+$('.float_box .backTop').click(function(){
+    $("html, body").animate({'scrollTop':0},320);
+})
+</script> 
+  <script language="javascript" type="text/javascript">
+  NTKF_PARAM = {
+  siteid:"kf_9817",
+  settingid: "kf_9817_1377747298633",
+    itemid: "1059443",
+      uid:"",
+    uname:"",
+
+userlevel:0,
+  orderid: "",
+  orderprice: "",
+itemparam: "size=41|color=red|brand=tata",
+      erpparam: "sid=eadfddeeel|utm=adfe|source=baidu" 
+
+} 
+</script>
+  <script type="text/javascript" src="PUBLIC_INDEX/Scripts/ntkfstat.js" charset="utf-8"></script> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-45831645-1', 'handu.com');
+  ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+</script> 
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?925dc35723dff5cd810f7fee2e41a269";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> 
+  <style>
+.btm_box_b{position:fixed;width:100%;z-index: 999; height:193px;bottom:-200px;left:0px;text-align: center; font-family:"微软雅黑"; background:url(PUBLIC_INDEX/Images/dt.png) no-repeat center 0;transition:0.8s;}
+.guanb_btn{
+  position:absolute;
+  left:856px;
+  top:27px;
+  z-index:1000;
+  width:16px;
+  height:16px;
+}
+.btm_box_bb{bottom:0;}
+</style> 
+  <script>
+  $(function(){
+    $("#btm_0828").addClass("btm_box_bb");
+    $(".guanb_btn").click(function(){
+      $("#btm_0828").css("display","none")
+      })
+      $(".dengl_btn").click(function(){
+      $("#btm_0828").css("display","none")
+      })
+    })
+</script> 
+  <style type="text/css">
+.gwd_toolbar_container{display:none; visibility:hidden;}
+.gwd_float_curve_trigger{display:none; visibility:hidden;}
+.gwd_float_curve{display:none; visibility:hidden;}
+.gwd_toolbar_control_small{display:none;}
+.gwd_toolbar_container gwd_toolbar_containerX gwd_toolbar_big gwd_ns_x11 gwd_toolbar_no_transition{visibility:hidden !important; display:none !important; margin-left: -1000000px !important;}
+.gwd_toolbar_goods_list gwd_ns_baokuan{display:none !important; visibility:hidden !important; margin-left: -1000000px !important;}
+.gwd_toolbar_goods_list .gwd_toolbar_goods_item_pic {display:none !important;}
+.gwd_toolbar_info{display:none !important; visibility:hidden !important; margin-left: -1000000px !important;}
+</style> 
+  <script src="PUBLIC_INDEX/Scripts/tag.js" type="text/javascript" async=""></script>   
+ </body>
+</html>

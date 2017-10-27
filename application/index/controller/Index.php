@@ -1,10 +1,39 @@
 <?php
 namespace app\index\controller;
-
-class Index
+use think\Controller;
+use think\Session;
+use think\Db;
+use app\index\model\BrandCategory;
+use app\index\model\ClothesCategory;
+use app\index\model\IndexCategory;
+use app\index\model\Member;
+class Index extends Controller
 {
-    public function index()
-    {
-        return '<style type="text/css">*{ padding: 0; margin: 0; } .think_default_text{ padding: 4px 48px;} a{color:#2E5CD5;cursor: pointer;text-decoration: none} a:hover{text-decoration:underline; } body{ background: #fff; font-family: "Century Gothic","Microsoft yahei"; color: #333;font-size:18px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.6em; font-size: 42px }</style><div style="padding: 24px 48px;"> <h1>:)</h1><p> ThinkPHP V5<br/><span style="font-size:30px">十年磨一剑 - 为API开发设计的高性能框架</span></p><span style="font-size:22px;">[ V5.0 版本由 <a href="http://www.qiniu.com" target="qiniu">七牛云</a> 独家赞助发布 ]</span></div><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_bd568ce7058a1091"></thinkad>';
-    }
+    public function index ()
+	{
+		$user_id = Session::get('user_id');
+		//判断session是否赋值
+		//var_dump(Session::has('user'));
+		//假如session为空，渲染404页面
+		$user = Member::get($user_id);
+		$this->assign('user',$user);
+
+		$brand = new BrandCategory();
+		$clothes = new ClothesCategory();
+		$index = new IndexCategory();
+		//一级分类查询
+		$cate1 = $brand->where('cate_pid',0)->select();
+		//二级分类查询品牌
+		$cate2 = $brand->where('cate_pid!=0')->select();
+		//三级分类查询服装
+		$cate3 = $clothes->cfind();
+		//查询可视区的分类
+		$view_cate = $index->find_index();
+		//var_dump(BrandCategory::getLastSql());
+		$this->assign('cate1',$cate1);
+		$this->assign('cate2',$cate2);
+		$this->assign('cate3',$cate3);
+		$this->assign('view_cate',$view_cate);
+		return $this->fetch();
+	}
 }

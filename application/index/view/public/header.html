@@ -1,0 +1,352 @@
+		<script src="PUBLIC_JS/toubu.js"></script>
+		<!--右边固定部分-->
+		<div id="fixed">
+			<div class="fixed">
+				<ul>
+					<li>
+						<div class="fixed1">
+							<a href="shopping.html">
+								<b><i class="iconfont">&#xe6c9;</i></b>
+								购物车
+							</a>
+						</div>
+						<p class="fixed2">
+							<a href="shopping.html">
+								<b><i class="iconfont">&#xe6c9;</i></b>
+								购物车
+							</a>
+						</p>
+					</li>
+					<li>
+						<div class="fixed1">							
+							
+								<b><i class="iconfont">&#xe677;</i></b>
+								在线客服
+							
+						</div>
+						<p class="fixed2">
+							
+								<b>工作时间</b>
+								9:00-23:00
+							
+						</p>
+					</li>
+					<li>
+						<div class="fixed1">	
+							
+								<b><i class="iconfont">&#xe6bf;</i></b>
+								下载APP专享福利
+							
+						</div>
+						<p class="fixed3">
+							
+								<img src="PUBLIC_IMG/images2/float_box4_03.jpg"/>
+							
+						</p>
+					</li>
+					<li id="fixed-li">
+						<div class="fixed1">	
+							
+								<b><i class="iconfont">&#xe692;</i></b>
+							
+						</div>
+						<p class="fixed2">
+							
+								<b><i class="iconfont">&#xe692;</i></b>
+							
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--顶部导航-->
+		<div id="top-wrapper">
+			<div class="top clear">
+				<div class="top-l">
+					<a href="\index\index\index" style="color:#ff0033">返回首页</a>
+					<a href="#">收藏网站</a>
+				</div>
+				<div class="top-r">
+					<ul class="clear">
+					{if empty($user)}
+						<li style="color:#000000">
+							您好，欢迎光临韩都衣舍！
+							
+						</li>
+						<li>
+							<a href="/index/user/login">登录</a>
+							
+						</li>
+						<li><a href="/index/user/register" style="color:#c70a28">注册</a>
+							
+						</li>
+					{/if}
+					{if !empty($user)}
+						<li style="color:#000000">
+							<div class="top-r-div" style="display: block;position: relative;width:200px;left:20px;">
+								<a href="/index/user/people">欢迎您，{$user->username}&nbsp;<i class="iconfont">&#xe618;</i></a>
+							</div>
+						</li>
+						<li>
+							
+							<div class="top-r-div" style="display: block;position: relative;left:20px;">
+								<a style="cursor: pointer;"  href="/index/user/people">积分0</a> &nbsp;&nbsp;
+								<a href="/index/quit/index">退出</a>
+							</div>
+						</li>
+						<li class="top-r-div-li">
+							<div class="top-r-div" style="display: block;position: relative;left:20px;">		
+									<a href="/index/user/people">我的韩都</a>		
+								<ol class="top-r-div-ol" style="display: none;">
+									<li><a href="#">我的订单</a></li>
+									<li><a href="#">我的优惠券</a></li>
+									<li><a href="#">我的收藏</a></li>
+									<li><a href="#">退货办理</a></li>
+								</ol>
+							</div>
+						</li>
+					{/if}
+						<li><a href="shopping.html">购物车</a></li>
+						<span></span>
+						<li><a href="#">在线客服</a></li>
+						<li><a href="#">帮助中心</a></li>
+						<li class="top-r-li"><a href="#"><i class="iconfont">&#xe619;</i>网站导航</a></li>
+					</ul>
+					<!--下拉框-->
+					<div class="top-r-b clear">
+						<div class="top-r-b1">
+							<h3>大家都在买HOT</h3>
+							<ul class="clear">
+								<li><a href="#">T恤</a></li>
+								<li><a href="#">连衣裙</a></li>
+								<li><a href="#">牛仔裤</a></li>
+								<li><a href="#">毛衣针织</a></li>
+								<li><a href="#">卫衣绒衫</a></li>
+								<li><a href="#">休闲套装</a></li>
+							</ul>
+						</div>
+						<div class="top-r-b2">
+							<h3>女装Women</h3>
+							<ul class="clear">
+								<li><a href="#">韩风快时尚女装</a></li>
+								<li><a href="#">韩风快时尚妈妈装</a></li>
+								<li><a href="#">韩风甜美少女装</a></li>
+								<li><a href="#">东方复古设计师女装</a></li>
+								<li><a href="#">韩风名媛时尚女装</a></li>
+								<li><a href="#">欧美浪漫田园风女装</a></li>
+								<li><a href="#">韩风大码女装</a></li>
+								<li><a href="#">欧美快时尚女装</a></li>
+							</ul>
+						</div>
+						<div class="top-r-b3">
+							<h3>男装Men</h3>
+							<ul class="clear">
+								<li><a href="#">韩风快时尚男装</a></li>
+								<li><a href="#">东方禅意设计师男装</a></li>
+								<li><a href="#">欧美街头轻潮男装</a></li>
+								
+							</ul>
+						</div>
+						<div class="top-r-b4">
+							<h3>童装Childern</h3>
+							<ul class="clear">
+								<li><a href="#">韩风快时尚童装</a></li>
+								<li><a href="#">东方简约设计师童装</a></li>
+								
+							</ul>
+						</div>
+						<div class="top-r-b5" style="border-right: 0;">
+							<h3>帮助中心Help</h3>
+							<ul class="clear">
+								<li><a href="#">会员制度</a></li>
+								<li><a href="#">售后服务</a></li>
+								<li><a href="#">购物流程</a></li>
+								<li><a href="#">关于发票</a></li>
+								<li><a href="#">配送方式</a></li>
+								<li><a href="#">韩都招聘</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--头部导航-->
+		<div id="header" class="clear">
+			<!--搜索logo部分-->
+			<div class="header-t">
+				<div class="logo">
+					<a href="/index/index/index" title="欢迎来到韩衣都舍"><img src="PUBLIC_IMG/logo_new.png"/></a>
+				</div>
+			<!--搜索框-->
+				<div class="search">
+					<form action="/index/goods/search" method="post">
+						<input type="text" placeholder="减龄不做作的时髦Tee" class="search-pl" name="search" />
+						<input type="submit" value="搜索"/>
+					</form>
+					<div class="search-b">
+						<ul class="clear">
+						{volist name="cate1" id="val1" }
+							<li><a href="shopList.html">{$val1.cate_name}</a></li>
+							<span></span>
+						{/volist}	
+						</ul>
+					</div>
+				</div>
+	
+				<!--二维码-->
+				<div class="er">
+					<img src="PUBLIC_IMG/ewm.png"/>
+					韩都衣舍私服搭配
+				</div>
+			</div>
+			
+			<!--商品分类导航部分-->
+			<div class="header-b clear">
+				<div class="header-b-shop">
+					<h2>全部商品分类</h2>
+					<ul class="header-b-shop-ul">
+						<li>
+							<h3>
+								<i class="iconfont">&#xe626;</i>
+								全部商品分类
+							</h3>
+							<a href="#">本周新品</a>
+							<a href="#">按价格</a>
+							<a href="#">按销量</a>
+							<span class="iconfont">&#xe600;</span>
+							<!--右边弹出框-->
+							<div class="header-b-stopr1">
+								<ol class="clear">
+								{volist name="cate2" id="val2" }
+									<li><a href="#"><img src="{$val2.brand_img}"/></a></li>
+								{/volist}
+								</ol>
+							</div>
+						</li>
+						<li>
+							<h3>
+								<i class="iconfont">&#xe60d;</i>
+								精选推荐
+							</h3>
+							<a href="#" class="header-b-a">连衣裙</a>
+							<a href="#">潮流爆款</a>
+							<a href="#">品牌特惠</a>
+							<span class="iconfont">&#xe600;</span>
+							<div class="header-b-stopr2">
+								<div class="header-b-stopdiv">
+									<h3>特惠精选</h3>
+									<ol class="clear">
+										<li><a href="#">清仓特惠</a></li>
+										<li><a href="#">爆款特惠</a></li>
+									</ol>
+								</div>
+								<div class="header-b-stopdiv">
+									<h3>潮流新品</h3>
+									<ol class="clear">
+										<li><a href="#" style="color:#f80001">2017秋装新品</a></li>
+										<li><a href="#">原创新品</a></li>
+										<li><a href="#">连衣裙</a></li>
+										<li><a href="#">卫衣</a></li>
+										<li><a href="#">毛针织衫</a></li>
+									</ol>
+								</div>
+								<div class="header-b-stopdiv">
+									<h3>类目新品</h3>
+									<ol class="clear">
+										<li><a href="#" style="color:#f80001">连衣裙</a></li>
+										<li><a href="#">牛仔裤</a></li>
+										
+									</ol>
+								</div>
+								<div class="header-b-stopdiv">
+									<h3>爆款集锦</h3>
+									<ol class="clear">
+										<li><a href="#" style="color:#f80001">2017秋装爆款</a></li>
+										<li><a href="#">女装爆款</a></li>
+										<li><a href="#">男装爆款</a></li>
+										<li><a href="#">童装爆款</a></li>
+										<li><a href="#">妈妈装爆款</a></li>
+									</ol>
+								</div>
+								<div class="header-b-stopdiv">
+									<h3>百变风格</h3>
+									<ol class="clear">
+										<li><a href="#" style="color:#f80001">潮流韩范</a></li>
+										<li><a href="#">纯色</a></li>
+										
+									</ol>
+								</div>
+								
+							</div>
+						</li>
+						<!-- 遍历一级分类开始 -->
+						{volist name="cate1" id="val1" }
+						<li>
+							<h3>
+								<i class="iconfont">&#xe604;</i>
+								{$val1.cate_name}
+							</h3>
+							<!-- 遍历可视区分类开始 -->
+							{volist name="view_cate" id="vo"}
+							{if ($val1.cate_id == $vo.box_id)}
+							<a href="/index/goods/category/brand_id/{$vo.brand_id}/clothes_id/{$vo.clothes_id}" class="header-b-a">{$vo.clothes_name}</a>
+							{/if}
+							{/volist}
+							<!-- 遍历可视区分类结束 -->
+							<span class="iconfont">&#xe600;</span>
+							<div class="header-b-stopr3">
+							<!-- 遍历二级分类和三级分类 -->
+								{volist name="cate2" id="val2" }
+								{if ($val1.cate_id == $val2.cate_pid)}
+								<div class="header-b-stop3div">
+									<h3>{$val2.cate_name}</h3>
+									<ol class="clear">
+										{volist name="cate3" id="val3" }
+											{if ($val3.brand_id == $val2.cate_id)}
+											<li><a href="/index/goods/category/brand_id/{$val2.cate_id}/clothes_id/{$val3.clothes_id}">{$val3.name}</a></li>
+											{/if}
+										{/volist}
+									</ol>
+								</div>	
+								{/if}
+								{/volist}
+							<!-- 遍历二级分类和三级分类 -->
+							<div class="header-b-stop3img">
+							{volist name="cate2" id="val2" }
+							{if ($val1.cate_id == $val2.cate_pid)}
+							<!-- 遍历品牌logo开始 -->
+									<a href=""><img src="{$val2.brand_img}"/></a>
+							{/if}
+							{/volist}
+							</div>
+							<!-- 遍历品牌logo结束 -->
+
+							</div>
+						</li>
+						{/volist}
+						<!-- 遍历一级分类结束 -->
+					</ul>
+			
+					
+				</div>
+				
+				<ul class="header-b-ul1 clear">
+					<li>2017秋装新品</li>
+					<li>团购批发</li>
+				</ul>
+				<ul class="header-b-ul2 clear">
+						<li class="header-b-ul1li">会员俱乐部<i class="iconfont">&#xe602;</i></li>
+						<li class="header-b-ul1li header-b-li">韩都资讯<i class="iconfont">&#xe602;</i>
+							<ul>
+								<li style="border-top: 0;"><a href="#">韩都设计</a></li>
+								<li><a href="#">品牌故事</a></li>
+							</ul>
+						</li>
+						<li>招兵买马</li>
+				</ul>
+			</div>
+		</div>	
+
+	
